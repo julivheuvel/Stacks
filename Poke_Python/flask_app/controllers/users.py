@@ -118,7 +118,11 @@ def dashboard():
         "id" : session["user_id"]
     }
     user = User.get_one(data)
-    return render_template("dashboard.html", user = user)
+
+    # get all pokemon to show 
+    pokemons = Pokemon.get_all_with_users()
+    # 
+    return render_template("dashboard.html", user = user, pokemons = pokemons)
 
 # ==================
 # LOGOUT ROUTE

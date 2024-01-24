@@ -1,6 +1,6 @@
 from flask_app import app
-# importing controllers
 
+# importing controllers
 from flask_app.controllers import pokemons, users
 
 
