@@ -23,7 +23,7 @@
         <div class="d-flex justify-content-between">
             <div>Gotta Catch 'Em All</div>
             <div class="d-flex align-items-center gap-3">
-                <h5><a href="/new_pokemon" class="btn btn-success shadow">Caught a Pokemon</a></h5>
+                <h5><a href="/new/pokemon" class="btn btn-success shadow">Caught a Pokemon</a></h5>
                 <h5><a href="/logout" class="btn btn-danger shadow">Logout</a></h5>
             </div>
         </div>
@@ -36,40 +36,57 @@
     <div class="container mt-3">
         <h1>All the Pokemon in your Pokedex!</h1>
 
-        <div>
+        <div class="w-50">
             {% for pokemon in pokemons %}
 
-                <div>{{pokemon.name}}</div>
+                <div class="d-flex justify-content-between">
+                    <h3>{{pokemon.name}}</h3>
+                    {% if pokemon.user_id == user.id %}
+                    
+                        <div class="text-warning">edit | delete</div>
+                    {% endif %}
+                        
+                </div>
 
                 <!-- ========= -->
                 <!-- TYPES -->
                 <!-- ========= -->
-                <div>{{pokemon.type1}}</div>
-                <!--  -->
-                {% if pokemon.type2 %}
-                    <div>{{pokemon.type2}}</div>
-                {% endif %}
+                <div>
+                    <h4>Type</h4>
+                    <div class="d-flex justify-content-between">
+                        <div>{{pokemon.type1}}</div>
+                        <!--  -->
+                        {% if pokemon.type2 %}
+                            <div>{{pokemon.type2}}</div>
+                        {% endif %}
+                    </div>
+                </div>
                 
                 <!-- ========= -->
                 <!-- Abilities -->
                 <!-- ========= -->
-                <div>{{pokemon.ability1}}</div>
-                <!--  -->
-                {% if pokemon.ability2 %}
-                    <div>{{pokemon.ability2}}</div>
-                {% endif %}
-                {% if pokemon.ability3 %}
-                    <div>{{pokemon.ability3}}</div>
-                {% endif %}
+                <div class="d-flex justify-content-between">
+                    <div>{{pokemon.ability1}}</div>
+                    <!--  -->
+                    {% if pokemon.ability2 %}
+                        <div>{{pokemon.ability2}}</div>
+                    {% endif %}
+                    {% if pokemon.ability3 %}
+                        <div>{{pokemon.ability3}}</div>
+                    {% endif %}
+                </div>
+                
                 
                 <!-- ========= -->
                 <!-- Weaknesses -->
                 <!-- ========= -->
+                <div class="d-flex justify-content-between">
                 <div>{{pokemon.weakness1}}</div>
                 <!--  -->
                 {% if pokemon.weakness2 %}
                     <div>{{pokemon.weakness2}}</div>
                 {% endif %}
+                </div>
 
 
                 <div class="text-muted small">{{pokemon.user.first_name}} {{pokemon.user.last_name}}</div>

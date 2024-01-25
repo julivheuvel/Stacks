@@ -71,3 +71,20 @@ def createPokemon():
     }
     Pokemon.savePoke(data)
     return redirect("/dashboard")
+
+# ==================
+# EDIT POKEMON ROUTE
+# ==================
+# GET
+@app.route("/edit/pokemon/<int:id>")
+def editPokemon():
+    # ? ==================
+    # ? VERIFY USER IS LOGGED IN
+    # ? ==================
+    if "user_id" not in session:
+        flash("Please register/login before you proceed to the website")
+        return redirect("/")
+    data = {
+        "id" : session["user_id"]
+#     }
+    return render_template("editPokemon.html")
