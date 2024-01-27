@@ -1,0 +1,31 @@
+
+.h-0 {
+    height: 0;
+}
+.w-0 {
+    width: 0;
+}
+@for $i from 1 through 100 {
+    // Width
+    .w-#{$i}#{"p"} {
+        width: #{$i}#{"%"};
+    }
+    .w-#{$i}#{"vw"} {
+        width: #{$i}#{"vw"};
+    }
+    .w-#{$i}#{"px"} {
+        width: #{$i}#{"px"};
+    }
+
+    // Height
+    .h-#{$i}#{"p"} {
+        height: #{$i}#{"%"};
+    }
+    .h-#{$i}#{"vh"} {
+        height: #{$i}#{"vh"};
+    }
+    .h-#{$i}#{"px"} {
+        height: #{$i}#{"px"};
+    }
+
+}

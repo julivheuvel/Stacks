@@ -121,8 +121,11 @@ def dashboard():
 
     # get all pokemon to show 
     pokemons = Pokemon.get_all_with_users()
-    # 
-    return render_template("dashboard.html", user = user, pokemons = pokemons)
+    
+    allCatches = Pokemon.getAllCatches()
+    print(allCatches)
+    
+    return render_template("dashboard.html", user = user, pokemons = pokemons, allCatches = allCatches)
 
 # ==================
 # LOGOUT ROUTE

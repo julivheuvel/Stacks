@@ -1,0 +1,320 @@
+@use 'sass:math';
+
+$utilities:(
+
+    // ===========
+    // Display
+    // ===========
+    "display" : (
+        "prefix" : "d",
+        "values" : (
+            "none" : none,
+            "block" : block,
+            "flex" : flex,
+            "inline" : inline,
+            "ib" : inline-block,
+        ),
+    ),
+
+    // ===========
+    // Justify Content
+    // ===========
+    "justify-content" : (
+        "prefix" : "jc",
+        "values" : (
+            "start" : start,
+            "center" : center,
+            "end" : end,
+            "left" : left,
+            "right" : right,
+            "stretch" : stretch,
+            "flex-start" : flex-start,
+            "flex-end" : flex-end,
+            "between" : space-between,
+            "around" : space-around,
+            "evenly" : space-evenly,
+        ),
+    ),
+
+    // ===========
+    // Align Items
+    // ===========
+    "align-items" : (
+        "prefix" : "ai",
+        "values" : (
+            "stretch" : stretch,
+            "center" : center,
+            "start" : start,
+            "end" : end,
+            "flex-end" : flex-end,
+            "flex-start" : flex-start,
+        ),
+    ),
+
+
+    // ===========
+    // Gap
+    // ===========
+    "gap" : (
+        "prefix" : "g",
+        "values" : (
+            "1" : 1em,
+            "2" : 2em,
+            "3" : 3em,
+            "4" : 4em,
+            "5" : 5em,
+        ),
+    ),
+
+
+    // ===========
+    // Opacity
+    // ===========
+    "opacity" : (
+        "prefix" : "o",
+        "values" : (
+            "10" : 0.1,
+            "15" : 0.15,
+            "20" : 0.2,
+            "25" : 0.25,
+            "30" : 0.3,
+            "35" : 0.35,
+            "40" : 0.4,
+            "45" : 0.45,
+            "50" : 0.5,
+            "55" : 0.55,
+            "60" : 0.6,
+            "65" : 0.65,
+            "70" : 0.7,
+            "75" : 0.75,
+            "80" : 0.8,
+            "85" : 0.85,
+            "90" : 0.9,
+            "95" : 0.95,
+            "100" : 1,
+        ),
+    ),
+
+    // ===========
+    // Padding
+    // ===========
+    "padding" : (
+        "prefix" : "p",
+        "values" : (
+            "0" : 0,
+            "1" : $base-padding,
+            "2" : $base-padding * 1.5,
+            "3" : $base-padding * 2,
+            "4" : $base-padding * 2.5,
+            "5" : $base-padding * 3,
+            "6" : $base-padding * 3.5,
+            "7" : $base-padding * 4,
+            "8" : $base-padding * 4.5,
+            "9" : $base-padding * 5,
+            "10" : $base-padding * 5.5,
+        ),
+    ),
+
+    
+    // ===========
+    // Padding-right
+    // ===========
+    "padding-right" : (
+        "prefix" : "pr",
+        "values" : (
+            "0" : 0,
+            "1" : $base-padding,
+            "2" : $base-padding * 1.5,
+            "3" : $base-padding * 2,
+            "4" : $base-padding * 2.5,
+            "5" : $base-padding * 3,
+            "6" : $base-padding * 3.5,
+            "7" : $base-padding * 4,
+            "8" : $base-padding * 4.5,
+            "9" : $base-padding * 5,
+            "10" : $base-padding * 5.5,
+        ),
+    ),
+
+    // ===========
+    // Padding-top
+    // ===========
+    "padding-top" : (
+        "prefix" : "pt",
+        "values" : (
+            "0" : 0,
+            "1" : $base-padding,
+            "2" : $base-padding * 1.5,
+            "3" : $base-padding * 2,
+            "4" : $base-padding * 2.5,
+            "5" : $base-padding * 3,
+            "6" : $base-padding * 3.5,
+            "7" : $base-padding * 4,
+            "8" : $base-padding * 4.5,
+            "9" : $base-padding * 5,
+            "10" : $base-padding * 5.5,
+        ),
+    ),
+
+
+    // ===========
+    // Padding-bottom
+    // ===========
+    "padding-bottom" : (
+        "prefix" : "pb",
+        "values" : (
+            "0" : 0,
+            "1" : $base-padding,
+            "2" : $base-padding * 1.5,
+            "3" : $base-padding * 2,
+            "4" : $base-padding * 2.5,
+            "5" : $base-padding * 3,
+            "6" : $base-padding * 3.5,
+            "7" : $base-padding * 4,
+            "8" : $base-padding * 4.5,
+            "9" : $base-padding * 5,
+            "10" : $base-padding * 5.5,
+        ),
+    ),
+
+
+    // ===========
+    // Padding-Left
+    // ===========
+    "padding-left" : (
+        "prefix" : "pl",
+        "values" : (
+            "0" : 0,
+            "1" : $base-padding,
+            "2" : $base-padding * 1.5,
+            "3" : $base-padding * 2,
+            "4" : $base-padding * 2.5,
+            "5" : $base-padding * 3,
+            "6" : $base-padding * 3.5,
+            "7" : $base-padding * 4,
+            "8" : $base-padding * 4.5,
+            "9" : $base-padding * 5,
+            "10" : $base-padding * 5.5,
+        ),
+    ),
+
+
+
+    // !=================================
+
+    // ===========
+    // margin
+    // ===========
+    "margin" : (
+        "prefix" : "m",
+        "values" : (
+            "0" : 0,
+            "auto" : 0 auto,
+            "1" : $base-margin,
+            "2" : $base-margin * 1.5,
+            "3" : $base-margin * 2,
+            "4" : $base-margin * 2.5,
+            "5" : $base-margin * 3,
+            "6" : $base-margin * 3.5,
+            "7" : $base-margin * 4,
+            "8" : $base-margin * 4.5,
+            "9" : $base-margin * 5,
+            "10" : $base-margin * 5.5,
+        ),
+    ),
+
+    
+    // ===========
+    // margin-right
+    // ===========
+    "margin-right" : (
+        "prefix" : "mr",
+        "values" : (
+            "0" : 0,
+            "1" : $base-margin,
+            "2" : $base-margin * 1.5,
+            "3" : $base-margin * 2,
+            "4" : $base-margin * 2.5,
+            "5" : $base-margin * 3,
+            "6" : $base-margin * 3.5,
+            "7" : $base-margin * 4,
+            "8" : $base-margin * 4.5,
+            "9" : $base-margin * 5,
+            "10" : $base-margin * 5.5,
+        ),
+    ),
+
+    // ===========
+    // margin-top
+    // ===========
+    "margin-top" : (
+        "prefix" : "mt",
+        "values" : (
+            "0" : 0,
+            "1" : $base-margin,
+            "2" : $base-margin * 1.5,
+            "3" : $base-margin * 2,
+            "4" : $base-margin * 2.5,
+            "5" : $base-margin * 3,
+            "6" : $base-margin * 3.5,
+            "7" : $base-margin * 4,
+            "8" : $base-margin * 4.5,
+            "9" : $base-margin * 5,
+            "10" : $base-margin * 5.5,
+        ),
+    ),
+
+
+    // ===========
+    // margin-bottom
+    // ===========
+    "margin-bottom" : (
+        "prefix" : "mb",
+        "values" : (
+            "0" : 0,
+            "1" : $base-margin,
+            "2" : $base-margin * 1.5,
+            "3" : $base-margin * 2,
+            "4" : $base-margin * 2.5,
+            "5" : $base-margin * 3,
+            "6" : $base-margin * 3.5,
+            "7" : $base-margin * 4,
+            "8" : $base-margin * 4.5,
+            "9" : $base-margin * 5,
+            "10" : $base-margin * 5.5,
+        ),
+    ),
+
+
+    // ===========
+    // margin-Left
+    // ===========
+    "margin-left" : (
+        "prefix" : "ml",
+        "values" : (
+            "0" : 0,
+            "1" : $base-margin,
+            "2" : $base-margin * 1.5,
+            "3" : $base-margin * 2,
+            "4" : $base-margin * 2.5,
+            "5" : $base-margin * 3,
+            "6" : $base-margin * 3.5,
+            "7" : $base-margin * 4,
+            "8" : $base-margin * 4.5,
+            "9" : $base-margin * 5,
+            "10" : $base-margin * 5.5,
+        ),
+    ),
+);
+
+
+@each $property, $map in $utilities {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $key, $val in $values {
+        .#{$prefix}-#{$key} {
+            #{$property} : $val;
+        }
+    }
+}

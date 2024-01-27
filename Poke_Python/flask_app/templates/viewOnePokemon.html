@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>PokePython</title>
+</head>
+<body class="w-50 mt-5 m-auto">
+    <!-- ========================= -->
+    <!-- NAVIGATION BAR -->
+    <!-- ========================= -->
+    <div class="container mt-3">
+        <div class="d-flex justify-content-between">
+            <h1>PokePython</h1>
+            <div class="d-flex align-items-center gap-5">
+                <a href="/dashboard">Pokedex</a>
+                <h3>Welcome {{user.first_name}} {{user.last_name}}!</h3>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div>Gotta Catch 'Em All</div>
+            <div class="d-flex align-items-center gap-3">
+                <h5><a href="/pokemon/new" class="btn btn-success shadow">Caught a Pokemon</a></h5>
+                <h5><a href="/logout" class="btn btn-danger shadow">Logout</a></h5>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================= -->
+    <div class="container mt-3">
+        <h1>All the Pokemon in your Pokedex!</h1>
+
+        <div class="w-50">
+            <div class="d-flex justify-content-between">
+                <h3>{{poke.name}}</h3>
+                {% if poke.user_id == user.id %}
+                
+                    <a href="/pokemon/edit/{{poke.id}}">edit</a> | <a href="/pokemon/delete/{{poke.id}}">delete</a>
+                {% endif %}
+                    
+            </div>
+
+            <!-- ========= -->
+            <!-- TYPES -->
+            <!-- ========= -->
+            <div>
+                <h4>Type</h4>
+                <div class="d-flex justify-content-between">
+                    <div>{{poke.type1}}</div>
+                    <!--  -->
+                    {% if poke.type2 %}
+                        <div>{{poke.type2}}</div>
+                    {% endif %}
+                </div>
+            </div>
+            
+            <!-- ========= -->
+            <!-- Abilities -->
+            <!-- ========= -->
+            <div class="d-flex justify-content-between">
+                <div>{{poke.ability1}}</div>
+                <!--  -->
+                {% if poke.ability2 %}
+                    <div>{{poke.ability2}}</div>
+                {% endif %}
+                {% if poke.ability3 %}
+                    <div>{{poke.ability3}}</div>
+                {% endif %}
+            </div>
+            
+            
+            <!-- ========= -->
+            <!-- Weaknesses -->
+            <!-- ========= -->
+            <div class="d-flex justify-content-between">
+                <div>{{poke.weakness1}}</div>
+                <!--  -->
+                {% if poke.weakness2 %}
+                    <div>{{poke.weakness2}}</div>
+                {% endif %}
+            </div>
+
+
+            <div class="text-muted small">{{poke.user.first_name}} {{poke.user.last_name}}</div>
+        </div>
+
+        <div class="w-50">
+
+            <h3>Users who also caught this pokemon</h3>
+        </div>
+
+
+    </div>
+
+
+        
+</body>
+</html>

@@ -98,3 +98,62 @@ class Pokemon:
             pokemons.append(poke)
 
         return pokemons
+    
+    # ==================
+    # GET ONE WITH USER
+    # ==================
+    @classmethod
+    def get_one_with_user(cls, data):
+        query = """
+            SELECT * FROM pokemons JOIN users on pokemons.user_id = users.id WHERE pokemons.id = %(id)s
+        """
+
+        results = connectToMySQL(db).query_db(query, data)
+
+        poke = Pokemon(results[0])
+
+        creator = user.User.get_one(data)
+        print(creator)
+        poke.user = creator
+        return poke
+    
+    # ==================
+    # UPDATE POKEMON
+    # ==================
+    @classmethod
+    def update(cls, data):
+        query = """
+            UPDATE pokemons SET name = %(name)s, type1 = %(type1)s, type2 = %(type2)s, ability1 = %(ability1)s, ability2 = %(ability2)s, ability3 = %(ability3)s, weakness1 = %(weakness1)s, weakness2 = %(weakness2)s, updated_at = NOW() WHERE id = %(id)s;
+        """
+        return connectToMySQL(db).query_db(query, data)
+    
+    # ==================
+    # DELETE POKEMON
+    # ==================
+    @classmethod
+    def delete(cls, data):
+        query = """
+            DELETE FROM pokemons where id = %(id)s;
+        """
+        return connectToMySQL(db).query_db(query, data)
+
+    # ==================
+    # CATCH/FAVORITE POKEMON
+    # ==================
+    @classmethod
+    def catchPokemon(cls, data):
+        query = """
+            INSERT INTO favorites (user_id, pokemon_id) VALUES (%(user_id)s, %(pokemon_id)s);
+        """
+        return connectToMySQL(db).query_db(query, data)
+    
+    # ==================
+    # FIND ALL CATCHES/FAVORITES POKEMON
+    # ==================
+    @classmethod
+    def getAllCatches(cls):
+        query = """
+            SELECT * FROM favorites;
+        """
+
+        return connectToMySQL(db).query_db(query)
