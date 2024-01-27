@@ -120,12 +120,10 @@ def dashboard():
     user = User.get_one(data)
 
     # get all pokemon to show 
-    pokemons = Pokemon.get_all_with_users()
+    pokemons = Pokemon.uncaughtPokemon(data)
+  
     
-    allCatches = Pokemon.getAllCatches()
-    print(allCatches)
-    
-    return render_template("dashboard.html", user = user, pokemons = pokemons, allCatches = allCatches)
+    return render_template("dashboard.html", user = user, pokemons = pokemons)
 
 # ==================
 # LOGOUT ROUTE
@@ -134,3 +132,4 @@ def dashboard():
 def logout():
     session.clear()
     return redirect("/")
+

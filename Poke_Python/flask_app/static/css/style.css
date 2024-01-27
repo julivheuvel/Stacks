@@ -1012,379 +1012,379 @@
   border: whitesmoke 9px solid;
 }
 
-.text-red {
+.text-yellow {
   color: #fbd743;
 }
 
-.bg-red {
+.bg-yellow {
   background-color: #fbd743;
 }
 
-.text-red-light-1 {
+.text-yellow-light-1 {
   color: #fbdb56;
 }
 
-.text-red-dark-1 {
+.text-yellow-dark-1 {
   color: #e2c23c;
 }
 
-.bg-red-light-1 {
+.bg-yellow-light-1 {
   background-color: #fbdb56;
 }
 
-.bg-red-dark-1 {
+.bg-yellow-dark-1 {
   background-color: #e2c23c;
 }
 
-.b-1-red {
+.b-1-yellow {
   border: #fbd743 1px solid;
 }
 
-.text-red-light-2 {
+.text-yellow-light-2 {
   color: #fcdf69;
 }
 
-.text-red-dark-2 {
+.text-yellow-dark-2 {
   color: #c9ac36;
 }
 
-.bg-red-light-2 {
+.bg-yellow-light-2 {
   background-color: #fcdf69;
 }
 
-.bg-red-dark-2 {
+.bg-yellow-dark-2 {
   background-color: #c9ac36;
 }
 
-.b-2-red {
+.b-2-yellow {
   border: #fbd743 2px solid;
 }
 
-.text-red-light-3 {
+.text-yellow-light-3 {
   color: #fce37b;
 }
 
-.text-red-dark-3 {
+.text-yellow-dark-3 {
   color: #b0972f;
 }
 
-.bg-red-light-3 {
+.bg-yellow-light-3 {
   background-color: #fce37b;
 }
 
-.bg-red-dark-3 {
+.bg-yellow-dark-3 {
   background-color: #b0972f;
 }
 
-.b-3-red {
+.b-3-yellow {
   border: #fbd743 3px solid;
 }
 
-.text-red-light-4 {
+.text-yellow-light-4 {
   color: #fde78e;
 }
 
-.text-red-dark-4 {
+.text-yellow-dark-4 {
   color: #978128;
 }
 
-.bg-red-light-4 {
+.bg-yellow-light-4 {
   background-color: #fde78e;
 }
 
-.bg-red-dark-4 {
+.bg-yellow-dark-4 {
   background-color: #978128;
 }
 
-.b-4-red {
+.b-4-yellow {
   border: #fbd743 4px solid;
 }
 
-.text-red-light-5 {
+.text-yellow-light-5 {
   color: #fdeba1;
 }
 
-.text-red-dark-5 {
+.text-yellow-dark-5 {
   color: #7e6c22;
 }
 
-.bg-red-light-5 {
+.bg-yellow-light-5 {
   background-color: #fdeba1;
 }
 
-.bg-red-dark-5 {
+.bg-yellow-dark-5 {
   background-color: #7e6c22;
 }
 
-.b-5-red {
+.b-5-yellow {
   border: #fbd743 5px solid;
 }
 
-.text-red-light-6 {
+.text-yellow-light-6 {
   color: #fdefb4;
 }
 
-.text-red-dark-6 {
+.text-yellow-dark-6 {
   color: #64561b;
 }
 
-.bg-red-light-6 {
+.bg-yellow-light-6 {
   background-color: #fdefb4;
 }
 
-.bg-red-dark-6 {
+.bg-yellow-dark-6 {
   background-color: #64561b;
 }
 
-.b-6-red {
+.b-6-yellow {
   border: #fbd743 6px solid;
 }
 
-.text-red-light-7 {
+.text-yellow-light-7 {
   color: #fef3c7;
 }
 
-.text-red-dark-7 {
+.text-yellow-dark-7 {
   color: #4b4114;
 }
 
-.bg-red-light-7 {
+.bg-yellow-light-7 {
   background-color: #fef3c7;
 }
 
-.bg-red-dark-7 {
+.bg-yellow-dark-7 {
   background-color: #4b4114;
 }
 
-.b-7-red {
+.b-7-yellow {
   border: #fbd743 7px solid;
 }
 
-.text-red-light-8 {
+.text-yellow-light-8 {
   color: #fef7d9;
 }
 
-.text-red-dark-8 {
+.text-yellow-dark-8 {
   color: #322b0d;
 }
 
-.bg-red-light-8 {
+.bg-yellow-light-8 {
   background-color: #fef7d9;
 }
 
-.bg-red-dark-8 {
+.bg-yellow-dark-8 {
   background-color: #322b0d;
 }
 
-.b-8-red {
+.b-8-yellow {
   border: #fbd743 8px solid;
 }
 
-.text-red-light-9 {
+.text-yellow-light-9 {
   color: #fffbec;
 }
 
-.text-red-dark-9 {
+.text-yellow-dark-9 {
   color: #191607;
 }
 
-.bg-red-light-9 {
+.bg-yellow-light-9 {
   background-color: #fffbec;
 }
 
-.bg-red-dark-9 {
+.bg-yellow-dark-9 {
   background-color: #191607;
 }
 
-.b-9-red {
+.b-9-yellow {
   border: #fbd743 9px solid;
 }
 
-.text-lightblue {
+.text-red {
   color: #ff1f1f;
 }
 
-.bg-lightblue {
+.bg-red {
   background-color: #ff1f1f;
 }
 
-.text-lightblue-light-1 {
+.text-red-light-1 {
   color: #ff3535;
 }
 
-.text-lightblue-dark-1 {
+.text-red-dark-1 {
   color: #e61c1c;
 }
 
-.bg-lightblue-light-1 {
+.bg-red-light-1 {
   background-color: #ff3535;
 }
 
-.bg-lightblue-dark-1 {
+.bg-red-dark-1 {
   background-color: #e61c1c;
 }
 
-.b-1-lightblue {
+.b-1-red {
   border: #ff1f1f 1px solid;
 }
 
-.text-lightblue-light-2 {
+.text-red-light-2 {
   color: #ff4c4c;
 }
 
-.text-lightblue-dark-2 {
+.text-red-dark-2 {
   color: #cc1919;
 }
 
-.bg-lightblue-light-2 {
+.bg-red-light-2 {
   background-color: #ff4c4c;
 }
 
-.bg-lightblue-dark-2 {
+.bg-red-dark-2 {
   background-color: #cc1919;
 }
 
-.b-2-lightblue {
+.b-2-red {
   border: #ff1f1f 2px solid;
 }
 
-.text-lightblue-light-3 {
+.text-red-light-3 {
   color: #ff6262;
 }
 
-.text-lightblue-dark-3 {
+.text-red-dark-3 {
   color: #b31616;
 }
 
-.bg-lightblue-light-3 {
+.bg-red-light-3 {
   background-color: #ff6262;
 }
 
-.bg-lightblue-dark-3 {
+.bg-red-dark-3 {
   background-color: #b31616;
 }
 
-.b-3-lightblue {
+.b-3-red {
   border: #ff1f1f 3px solid;
 }
 
-.text-lightblue-light-4 {
+.text-red-light-4 {
   color: #ff7979;
 }
 
-.text-lightblue-dark-4 {
+.text-red-dark-4 {
   color: #991313;
 }
 
-.bg-lightblue-light-4 {
+.bg-red-light-4 {
   background-color: #ff7979;
 }
 
-.bg-lightblue-dark-4 {
+.bg-red-dark-4 {
   background-color: #991313;
 }
 
-.b-4-lightblue {
+.b-4-red {
   border: #ff1f1f 4px solid;
 }
 
-.text-lightblue-light-5 {
+.text-red-light-5 {
   color: #ff8f8f;
 }
 
-.text-lightblue-dark-5 {
+.text-red-dark-5 {
   color: #801010;
 }
 
-.bg-lightblue-light-5 {
+.bg-red-light-5 {
   background-color: #ff8f8f;
 }
 
-.bg-lightblue-dark-5 {
+.bg-red-dark-5 {
   background-color: #801010;
 }
 
-.b-5-lightblue {
+.b-5-red {
   border: #ff1f1f 5px solid;
 }
 
-.text-lightblue-light-6 {
+.text-red-light-6 {
   color: #ffa5a5;
 }
 
-.text-lightblue-dark-6 {
+.text-red-dark-6 {
   color: #660c0c;
 }
 
-.bg-lightblue-light-6 {
+.bg-red-light-6 {
   background-color: #ffa5a5;
 }
 
-.bg-lightblue-dark-6 {
+.bg-red-dark-6 {
   background-color: #660c0c;
 }
 
-.b-6-lightblue {
+.b-6-red {
   border: #ff1f1f 6px solid;
 }
 
-.text-lightblue-light-7 {
+.text-red-light-7 {
   color: #ffbcbc;
 }
 
-.text-lightblue-dark-7 {
+.text-red-dark-7 {
   color: #4d0909;
 }
 
-.bg-lightblue-light-7 {
+.bg-red-light-7 {
   background-color: #ffbcbc;
 }
 
-.bg-lightblue-dark-7 {
+.bg-red-dark-7 {
   background-color: #4d0909;
 }
 
-.b-7-lightblue {
+.b-7-red {
   border: #ff1f1f 7px solid;
 }
 
-.text-lightblue-light-8 {
+.text-red-light-8 {
   color: #ffd2d2;
 }
 
-.text-lightblue-dark-8 {
+.text-red-dark-8 {
   color: #330606;
 }
 
-.bg-lightblue-light-8 {
+.bg-red-light-8 {
   background-color: #ffd2d2;
 }
 
-.bg-lightblue-dark-8 {
+.bg-red-dark-8 {
   background-color: #330606;
 }
 
-.b-8-lightblue {
+.b-8-red {
   border: #ff1f1f 8px solid;
 }
 
-.text-lightblue-light-9 {
+.text-red-light-9 {
   color: #ffe9e9;
 }
 
-.text-lightblue-dark-9 {
+.text-red-dark-9 {
   color: #1a0303;
 }
 
-.bg-lightblue-light-9 {
+.bg-red-light-9 {
   background-color: #ffe9e9;
 }
 
-.bg-lightblue-dark-9 {
+.bg-red-dark-9 {
   background-color: #1a0303;
 }
 
-.b-9-lightblue {
+.b-9-red {
   border: #ff1f1f 9px solid;
 }
 

@@ -159,6 +159,7 @@ def viewPokemon(id):
     }
     poke = Pokemon.get_one_with_user(poke_data)
 
+
     return render_template("viewOnePokemon.html", user = user, poke = poke)
 
 # ==================
@@ -179,3 +180,48 @@ def catchPokemon(id):
     }
     Pokemon.catchPokemon(data)
     return redirect("/dashboard")
+
+
+# ==================
+# CAUGHT POKEMON ROUTE
+# ==================
+@app.route("/pokemon/caught")
+def caughtPokemon():
+    # ? ==================
+    # ? VERIFY USER IS LOGGED IN
+    # ? ==================
+    if "user_id" not in session:
+        flash("Please register/login before you proceed to the website")
+        return redirect("/")
+    data = {
+        "id" : session["user_id"]
+    }
+    user = User.get_one(data)
+
+    allCaught = Pokemon.getAllCaught(data)
+
+    return render_template("caughtPokemon.html", user = user, allCaught = allCaught)
+
+
+# ==================
+# RELEASE POKEMON ROUTE
+# ==================
+@app.route("/pokemon/release/<int:id>")
+def releasePokemon(id):
+    # ? ==================
+    # ? VERIFY USER IS LOGGED IN
+    # ? ==================
+    if "user_id" not in session:
+        flash("Please register/login before you proceed to the website")
+        return redirect("/")
+    
+    data = {
+        "user_id" : session["user_id"],
+        "pokemon_id" : id
+    }
+    Pokemon.releasePokemon(data)
+    return redirect("/pokemon/caught")
+
+
+
+# unfavorited => relationship does not yet exist

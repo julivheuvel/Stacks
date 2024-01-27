@@ -44,6 +44,8 @@ class User:
         self.password = data['password']
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
+        # list of pokemon caught by single user
+        self.usersPokemons = []
 
     # ==================
     # VALIDATIONS
@@ -142,3 +144,11 @@ class User:
         else:
             return User(results[0])
 
+    # # ==================
+    # # UNFAVORITED USERS
+    # # ==================
+    #     @classmethod
+    #     def unfavorited_users(cls)
+
+
+# unfavorited => relationship does not yet exist

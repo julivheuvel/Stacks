@@ -16,10 +16,8 @@
         <div class="d-flex jc-between">
             <h1>PokePython</h1>
             <div class="d-flex ai-center g-5">
-                <div class="d-flex g-2">
-                    <a href="/pokemon/caught">Caught Pokemon</a>
-                    <h3>Welcome {{user.first_name}} {{user.last_name}}!</h3>
-                </div>
+                <a href="/dashboard">Submitted Pokemon</a>
+                <h3>Welcome {{user.first_name}} {{user.last_name}}!</h3>
             </div>
         </div>
         <div class="d-flex jc-between">
@@ -35,20 +33,19 @@
     <!-- ========================= -->
     <!-- MAIN CONTENT -->
     <!-- ========================= -->
-    <div class="w-80vw m-auto mt-3">
-        <h1>Pokemon To Catch!</h1>
+    <div class="w-80vw m-auto mt-3 b-1-red">
+        <h1>Your Caught Pokemon!</h1>
 
-        <div class="w-55vw">
-            {% for pokemon in pokemons %}
+        <div class="w-55p b-1-yellow">
+            {% for pokemon in allCaught %}
 
                 <div class="d-flex jc-between mt-2">
                     <h3>{{pokemon.name}}</h3>
-                    <div class="text-warning">
-                        <a href="/pokemon/view/{{pokemon.id}}">view</a>
-                        <a href="/pokemon/catch/{{pokemon.id}}">catch</a>
-                        {% if pokemon.user_id == user.id %}
-                            | <a href="/pokemon/edit/{{pokemon.id}}">edit</a> | <a href="/pokemon/delete/{{pokemon.id}}">delete</a>
-                        {% endif %}
+                    <div class="text-warning"><a href="/pokemon/view/{{pokemon.id}}">view</a>
+                    <a href="/pokemon/release/{{pokemon.id}}">release</a>
+                    {% if pokemon.user_id == user.id %}
+                        | <a href="/pokemon/edit/{{pokemon.id}}">edit</a> | <a href="/pokemon/delete/{{pokemon.id}}">delete</a>
+                    {% endif %}
                     </div>
                     
                 </div>
@@ -99,5 +96,6 @@
             
         </div>
     </div>
+
 </body>
 </html>

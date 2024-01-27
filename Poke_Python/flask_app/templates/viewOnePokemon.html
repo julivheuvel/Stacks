@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href={{ url_for('static', filename='css/style.css') }}>
     <title>PokePython</title>
 </head>
-<body class="w-50 mt-5 m-auto">
+<body class="w-80vw mt-5 m-auto bg-blue">
     <!-- ========================= -->
     <!-- NAVIGATION BAR -->
     <!-- ========================= -->
     <div class="container mt-3">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex jc-between">
             <h1>PokePython</h1>
-            <div class="d-flex align-items-center gap-5">
-                <a href="/dashboard">Pokedex</a>
+            <div class="d-flex ai-center g-5">
+                <a href="/dashboard">Submitted Pokemon</a>
                 <h3>Welcome {{user.first_name}} {{user.last_name}}!</h3>
             </div>
         </div>
-        <div class="d-flex justify-content-between">
+        <div class="d-flex jc-between">
             <div>Gotta Catch 'Em All</div>
-            <div class="d-flex align-items-center gap-3">
-                <h5><a href="/pokemon/new" class="btn btn-success shadow">Caught a Pokemon</a></h5>
+            <div class="d-flex ai-center g-3">
+                <h5><a href="/pokemon/new" class="btn btn-success shadow">Add to the Database</a></h5>
                 <h5><a href="/logout" class="btn btn-danger shadow">Logout</a></h5>
             </div>
         </div>
@@ -36,11 +36,10 @@
     <div class="container mt-3">
         <h1>All the Pokemon in your Pokedex!</h1>
 
-        <div class="w-50">
-            <div class="d-flex justify-content-between">
+        <div class="w-50  mt-2">
+            <div class="d-flex jc-between">
                 <h3>{{poke.name}}</h3>
                 {% if poke.user_id == user.id %}
-                
                     <a href="/pokemon/edit/{{poke.id}}">edit</a> | <a href="/pokemon/delete/{{poke.id}}">delete</a>
                 {% endif %}
                     
@@ -51,7 +50,7 @@
             <!-- ========= -->
             <div>
                 <h4>Type</h4>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex jc-between">
                     <div>{{poke.type1}}</div>
                     <!--  -->
                     {% if poke.type2 %}
@@ -63,7 +62,7 @@
             <!-- ========= -->
             <!-- Abilities -->
             <!-- ========= -->
-            <div class="d-flex justify-content-between">
+            <div class="d-flex jc-between">
                 <div>{{poke.ability1}}</div>
                 <!--  -->
                 {% if poke.ability2 %}
@@ -78,7 +77,7 @@
             <!-- ========= -->
             <!-- Weaknesses -->
             <!-- ========= -->
-            <div class="d-flex justify-content-between">
+            <div class="d-flex jc-between">
                 <div>{{poke.weakness1}}</div>
                 <!--  -->
                 {% if poke.weakness2 %}
@@ -93,6 +92,12 @@
         <div class="w-50">
 
             <h3>Users who also caught this pokemon</h3>
+            {% for pokemon in poke.catchers %}
+                <div>{{pokemon.username}}</div>
+            {% endfor %}
+            
+            
+            
         </div>
 
 

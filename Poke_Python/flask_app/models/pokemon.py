@@ -35,7 +35,9 @@ class Pokemon:
         self.weakness2 = data['weakness2']
         self.user_id = data['user_id']
         self.user = None
-        self.favorited = []
+
+        # list of users who have caught this pokemon
+        self.catchers = []
 
     # ==================
     # VALIDATIONS
@@ -71,11 +73,11 @@ class Pokemon:
     # GET ALL WITH USERS
     # ==================
     @classmethod
-    def get_all_with_users(cls):
+    def getAllCaught(cls, data):
         query = """
-            SELECT * FROM pokemons JOIN users ON pokemons.user_id = users.id;
+            SELECT * FROM pokemons join favorites on favorites.pokemon_id = pokemons.id join users on favorites.user_id = users.id where users.id = %(id)s;
         """
-        results = connectToMySQL(db).query_db(query)
+        results = connectToMySQL(db).query_db(query, data)
 
         pokemons = []
 
@@ -105,16 +107,37 @@ class Pokemon:
     @classmethod
     def get_one_with_user(cls, data):
         query = """
-            SELECT * FROM pokemons JOIN users on pokemons.user_id = users.id WHERE pokemons.id = %(id)s
+            SELECT * FROM pokemons LEFT JOIN favorites ON pokemons.id = favorites.pokemon_id LEFT JOIN users ON users.id = favorites.user_id WHERE pokemons.id = %(id)s;
         """
 
         results = connectToMySQL(db).query_db(query, data)
 
-        poke = Pokemon(results[0])
+        # creating instance of pokemon object
+        poke = cls(results[0])
+        print(poke)
 
-        creator = user.User.get_one(data)
-        print(creator)
-        poke.user = creator
+        # storing user data to pokemon
+        # creator = user.User.get_one(data)
+        # print(creator)
+        
+        # poke.user = creator
+
+        for row in results:
+            if row["users.id"] == None:
+                break
+            data ={
+                "id" : row["users.id"],
+                "first_name" : row["first_name"],
+                "last_name" : row["last_name"],
+                "username" : row["username"],
+                "email" : row["email"],
+                "password" : row["password"],
+                "created_at" : row["created_at"],
+                "updated_at" : row["updated_at"],
+            }
+
+            poke.catchers.append(user.User(data))
+        
         return poke
     
     # ==================
@@ -147,13 +170,49 @@ class Pokemon:
         """
         return connectToMySQL(db).query_db(query, data)
     
+
     # ==================
-    # FIND ALL CATCHES/FAVORITES POKEMON
+    # UNCAUGHT POKEMON
     # ==================
     @classmethod
-    def getAllCatches(cls):
+    def uncaughtPokemon(cls, data):
         query = """
-            SELECT * FROM favorites;
+            SELECT * FROM pokemons WHERE pokemons.id NOT IN (SELECT pokemon_id FROM favorites where user_id = %(id)s);
         """
 
-        return connectToMySQL(db).query_db(query)
+        results = connectToMySQL(db).query_db(query, data)
+
+        pokemons = []
+        print(results)
+        
+
+        # for evey result in the dictionary of results
+        for pokemon in results:
+            # creating a pokemon here, at this point the user field is empty
+            poke = Pokemon(pokemon)
+
+            data ={
+                "id" : pokemon['user_id']
+            }
+            # getting user via id from db
+            creator = user.User.get_one(data)
+
+            # adding user info from db equal to user field 
+            poke.user = creator
+
+            # add pokemon to the pokemons list with user data now populated
+            pokemons.append(poke)
+
+        return pokemons
+
+    # ==================
+    # RELEASE POKEMON
+    # ==================
+    @classmethod
+    def releasePokemon(cls, data):
+        query = """
+            DELETE FROM favorites where user_id = %(user_id)s and pokemon_id = %(pokemon_id)s;
+        """
+        return connectToMySQL(db).query_db(query, data)
+
+    # unfavorited => relationship does not yet exist

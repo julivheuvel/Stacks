@@ -16,7 +16,7 @@
         <div class="d-flex justify-content-between">
             <h1>PokePython</h1>
             <div class="d-flex align-items-center gap-5">
-                <a href="/dashboard">Pokedex</a>
+                <a href="/dashboard">Submitted Pokemon</a>
                 <h3>Welcome {{user.first_name}} {{user.last_name}}!</h3>
             </div>
         </div>
@@ -34,7 +34,7 @@
     <!-- MAIN CONTENT -->
     <!-- ========================= -->
     <div class="container mt-3">
-        <h1>Add to your Pokedex!</h1>
+        <h1>Add to the Database!</h1>
         {% with messages = get_flashed_messages() %}     
             {% if messages %}                           
                 {% for message in messages %}            
