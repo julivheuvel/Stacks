@@ -77,7 +77,7 @@ public class User {
 //	RELATIONSHIPS
 //	=================
 	@OneToMany(mappedBy="user", fetch=FetchType.LAZY)
-	private List<Song<> songs;
+	private List<Song> songs;
 	
 	@ManyToMany(fetch=FetchType.LAZY)
 	@JoinTable(
@@ -104,4 +104,85 @@ public class User {
 //	=================
 //	GETTERS AND SETTERS
 //	=================
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getConfirm() {
+		return confirm;
+	}
+
+	public void setConfirm(String confirm) {
+		this.confirm = confirm;
+	}
+
+	public Date getCreatedAt() {
+		return createdAt;
+	}
+
+	public void setCreatedAt(Date createdAt) {
+		this.createdAt = createdAt;
+	}
+
+	public Date getUpdatedAt() {
+		return updatedAt;
+	}
+
+	public void setUpdatedAt(Date updatedAt) {
+		this.updatedAt = updatedAt;
+	}
+
+	public List<Song> getSongs() {
+		return songs;
+	}
+
+	public void setSongs(List<Song> songs) {
+		this.songs = songs;
+	}
+
+	public List<Song> getSongsLiked() {
+		return songsLiked;
+	}
+
+	public void setSongsLiked(List<Song> songsLiked) {
+		this.songsLiked = songsLiked;
+	}
+	
+
 }
