@@ -19,19 +19,25 @@
         </div>
         <div>
             <a href="/register">Register</a>
-            <a href="/login">Login</a>
         </div>
     </nav>
 
-    <div class="container border mt-3">        
-        <h1 class="text-center border">Login</h1>
+    <div class="container mt-3">        
+        <h1 class="text-center">Login</h1>
 
-
-
-        <div class="border">
-
-            <div>Here's some content</div>
-        </div>
+        <form:form action="/log" method="post" modelAttribute="newLogin">
+	        <div class="form-group">
+	            <label>Email:</label>
+	            <form:input path="email" class="form-control" />
+	            <form:errors path="email" class="text-danger" />
+	        </div>
+	        <div class="form-group">
+	            <label>Password:</label>
+	            <form:password path="password" class="form-control" />
+	            <form:errors path="password" class="text-danger" />
+	        </div>
+	        <input type="submit" value="Login" class="btn btn-success" />
+	    </form:form>
     </div>
 
 </body>

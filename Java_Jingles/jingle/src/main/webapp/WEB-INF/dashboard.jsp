@@ -18,18 +18,19 @@
         <div>
         </div>
         <div>
+            <a href="/addMusic">Add a Song</a>
             <a href="/logout">Logout</a>
         </div>
     </nav>
 
-    <div class="container border mt-3">        
-        <h1 class="text-center border">Dashboard</h1>
+    <div class="container mt-3">        
+        <h1 class="text-center">Dashboard</h1>
 
 
 
         <div class="border">
 
-            <div>Here's some content</div>
+            <div>Top Ten Songs</div>
         </div>
     </div>
 

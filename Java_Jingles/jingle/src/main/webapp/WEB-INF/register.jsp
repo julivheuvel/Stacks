@@ -18,20 +18,43 @@
         <div>
         </div>
         <div>
-            <a href="/register">Register</a>
             <a href="/login">Login</a>
         </div>
     </nav>
 
-    <div class="container border mt-3">        
-        <h1 class="text-center border">Register</h1>
+    <div class="container mt-3">        
+        <h1 class="text-center">Register</h1>        
+		<h1 class = "text-center text-danager">${notAllowed}</h1>
 
+		<form:form action="/reg" method="post" modelAttribute="newUser">
+		 	<div class="form-group">
+	            <label>First Name:</label>
+	            <form:input path="firstName" class="form-control" />
+	            <form:errors path="firstName" class="text-danger" />
+	        </div>
+		 	<div class="form-group">
+	            <label>Last Name:</label>
+	            <form:input path="lastName" class="form-control" />
+	            <form:errors path="lastName" class="text-danger" />
+	        </div>
+	        <div class="form-group">
+	            <label>Email:</label>
+	            <form:input path="email" class="form-control" />
+	            <form:errors path="email" class="text-danger" />
+	        </div>
+	        <div class="form-group">
+	            <label>Password:</label>
+	            <form:password path="password" class="form-control" />
+	            <form:errors path="password" class="text-danger" />
+	        </div>
+	        <div class="form-group">
+	            <label>Confirm Password:</label>
+	            <form:password path="confirm" class="form-control" />
+	            <form:errors path="confirm" class="text-danger" />
+	        </div>
+	        <input type="submit" value="Register" class="btn btn-primary" />
+	    </form:form>
 
-
-        <div class="border">
-
-            <div>Here's some content</div>
-        </div>
     </div>
 
 </body>

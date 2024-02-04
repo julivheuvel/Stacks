@@ -23,12 +23,13 @@
         </div>
     </nav>
 
-    <div class="container border mt-3">        
-        <h1 class="text-center border">Welcome To Java</h1>
+    <div class="container  mt-3">        
+        <p class = "text-center text-danger">${notAllowed}</p>
+        <h1 class="text-center ">Welcome To Java</h1>
 
 
 
-        <div class="border">
+        <div class="">
 
             <div>Here's some content</div>
         </div>
