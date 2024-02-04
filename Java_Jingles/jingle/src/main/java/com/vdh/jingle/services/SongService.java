@@ -19,6 +19,10 @@ public class SongService {
 		return (List<Song>) songRepo.findAll();
 	}
 	
+	public Song create(Song song) {
+		return songRepo.save(song);
+	}
+	
 	public Song findSong(Long id) {
 		Optional<Song> optionalSong = songRepo.findById(id);
 		if(optionalSong.isPresent()) {

@@ -23,14 +23,35 @@
     </nav>
 
     <div class="container border mt-3">        
-        <h1 class="text-center border">Update Music Post</h1>
+        <h1 class="text-center border">Update ${song.name}</h1>
 
 
 
-        <div class="border">
-
-            <div>Here's some content</div>
-        </div>
+        <form:form method="POST" action="/songs/${song.id}/update" modelAttribute="updateSong">
+            <input type="hidden" name="_method" value="put">
+	        <p>
+	            <form:label path="name">Name:</form:label>
+	            <form:errors path="name"/>
+	            <form:input path="name"/>
+	        </p>
+	        <p>
+	            <form:label path="album">Album:</form:label>
+	            <form:errors path="album"/>
+	            <form:input path="album"/>
+	        </p>
+	        <p>
+	            <form:label path="artist">Artist:</form:label>
+	            <form:errors path="artist"/>
+	            <form:input path="artist"/>
+	        </p>
+	        <p>
+	            <form:label path="dateAdded">Date Created:</form:label>
+	            <form:errors path="dateAdded"/>
+	            <form:input type="date" path="dateAdded"/>
+	        </p>
+	        <input type="submit" value="Add It!"/>
+	    </form:form>
     </div>
+
 </body>
 </html>

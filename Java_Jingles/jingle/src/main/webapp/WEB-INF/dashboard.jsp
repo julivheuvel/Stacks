@@ -18,7 +18,7 @@
         <div>
         </div>
         <div>
-            <a href="/addMusic">Add a Song</a>
+            <a href="/songs/add">Add a Song</a>
             <a href="/logout">Logout</a>
         </div>
     </nav>
@@ -26,7 +26,36 @@
     <div class="container mt-3">        
         <h1 class="text-center">Dashboard</h1>
 
-
+        <table class="table">
+            <tr>
+                <th>Song</th>
+                <th>Album</th>
+                <th>Artist</th>
+                <th>Date Created</th>
+                <th>Created By</th>
+                <th>Likes</th>
+                <th>Actions</th>
+            </tr>
+                <c:forEach items="${songs}" var="song">
+                <tr>
+                    <td><a href="/songs/${song.id}">${song.name}</a></td>
+                    <td>${song.album}</td>
+                    <td>${song.artist}</td>
+                    <td>${song.dateAdded}</td>
+                    <td>${song.user.firstName} ${song.user.lastName}</td>
+                    <td>${song.usersLiked.size()}</td>
+                    <td>
+                        <a href="#">Like</a>
+                        <c:if test="${loggedInUser.id == song.user.id}">
+                            <a href="/songs/${song.id}/edit">Edit</a>
+                            <a href="#">Delete</a>
+                        </c:if>
+                    </td>
+                </tr>
+                    
+                </c:forEach>
+        </table>
+            
 
         <div class="border">
 

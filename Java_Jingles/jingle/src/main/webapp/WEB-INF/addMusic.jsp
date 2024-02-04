@@ -44,7 +44,7 @@
 	        <p>
 	            <form:label path="dateAdded">Date Created:</form:label>
 	            <form:errors path="dateAdded"/>
-	            <form:input path="dateAdded"/>
+	            <form:input type="date" path="dateAdded"/>
 	        </p>
 	        <input type="submit" value="Add It!"/>
 	    </form:form>
