@@ -10,7 +10,7 @@ import com.vdh.jingle.models.Song;
 @Repository
 public interface SongRepository extends CrudRepository<Song, Long> {
 	
-	Song findByUser(Long userId);
+//	Song findByUser(Long userID);
 	
 	List<Song> findAll();
 	

@@ -11,12 +11,18 @@ import com.vdh.jingle.services.UserService;
 public class UserController {
 	
 	@Autowired
-	private UserService userServ;
+	private UserService userService;
 	
 	@GetMapping("/")
 	public String index() {
 		
 		return "index.jsp";
+	}
+	
+	@GetMapping("/register")
+	public String register() {
+		
+		return "register.jsp";
 	}
 
 }
