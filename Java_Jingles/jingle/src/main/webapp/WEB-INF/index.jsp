@@ -14,12 +14,24 @@
 </head>
 <body>
     
-    <nav class="d-flex justify-content-between">
-        <div></div>
+    <nav class="container d-flex justify-content-between mt-3">
+        <div>
+        </div>
         <div>
             <a href="/register">Register</a>
             <a href="/login">Login</a>
         </div>
     </nav>
+
+    <div class="container border mt-3">        
+        <h1 class="text-center border">Welcome To Java</h1>
+
+
+
+        <div class="border">
+
+            <div>Here's some content</div>
+        </div>
+    </div>
 </body>
 </html>
