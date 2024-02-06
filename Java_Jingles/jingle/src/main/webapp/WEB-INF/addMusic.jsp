@@ -24,7 +24,7 @@
 
     <div class="container border mt-3">        
         <h1 class="text-center border">Add Music</h1>
-
+		<p class = "text-center text-danger">${notAllowed}</p>
         <form:form method="POST" action="/songs/new" modelAttribute="newSong">
 	        <p>
 	            <form:label path="name">Name:</form:label>

@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.vdh.jingle.models.Song;
@@ -79,42 +78,35 @@ public class SongController {
 //	UPDATE SONG
 //	=========================	
 	 @GetMapping("/songs/{id}/edit")
-	    public String editSong(@PathVariable("id") Long id, Model model, 
+	 public String editSong(@PathVariable("id") Long id, Model model, 
 	    		HttpSession session, RedirectAttributes redirectAttributes) {
 	    	
-		 	Long loggedInUserId = (Long)session.getAttribute("user_id");
-	    	
-	    	if(loggedInUserId == null) {
-	    		redirectAttributes.addFlashAttribute("notAllowed", "Must be logged in to view this page!!!" );
-	    		return "redirect:/";
-	    	}
-	    	
-	    	
-	    	Song song = songService.findSong(id);
-	    	model.addAttribute("song", song);
-	    	
-	    	return "updateMusic.jsp";
-	    }
-	    
-    @RequestMapping(value="/songs/{id}/update", method=RequestMethod.PUT)
-    public String saveEdit(@Valid @ModelAttribute("updateSong") Song song, 
-    		BindingResult result, HttpSession session, RedirectAttributes redirectAttributes) {
-    	Long loggedInUserId = (Long)session.getAttribute("user_id");
+	 	Long loggedInUserId = (Long)session.getAttribute("user_id");
     	
     	if(loggedInUserId == null) {
-    		redirectAttributes.addFlashAttribute("notAllowed", "must be logged in to view this page" );
+    		redirectAttributes.addFlashAttribute("notAllowed", "Must be logged in to view this page!!!" );
     		return "redirect:/";
     	}
     	
-    	if(result.hasErrors()) {
-    		return "updateMusic.jsp";
-    	}
     	
+    	Song song = songService.findSong(id);
+    	System.out.println("==================");
+    	System.out.println(song);
+    	System.out.println("==================");
+    	model.addAttribute("song", song);
     	
-    	User user = userService.findUser(loggedInUserId);
-    	song.setUser(user);
-    	songService.create(song);
-    	return "redirect:/greatIdeas";
+    	return "updateMusic.jsp";
     }
+	 
+	 @PutMapping("/songs/{id}/update")
+	 public String updateSong(@Valid @ModelAttribute("song") Song updateSong, BindingResult result) {
+		  if(result.hasErrors()) {
+			  return "updateMusic.jsp";
+		  }
+		 return "redirect:/dashboard";
+	 }
+	    
+
+
 
 }

@@ -15,8 +15,7 @@
 <body>
     
     <nav class="container d-flex justify-content-between mt-3">
-        <div>
-        </div>
+        <div></div>
         <div>
             <a href="/logout">Logout</a>
         </div>
@@ -24,12 +23,10 @@
 
     <div class="container border mt-3">        
         <h1 class="text-center border">Update ${song.name}</h1>
-
-
-
-        <form:form method="POST" action="/songs/${song.id}/update" modelAttribute="updateSong">
-            <input type="hidden" name="_method" value="put">
-	        <p>
+		<p class = "text-center text-danger">${notAllowed}</p>
+		
+		<form:form action="/songs/${song.id}/update" method="PUT" modelAttribute="song">
+			<p>
 	            <form:label path="name">Name:</form:label>
 	            <form:errors path="name"/>
 	            <form:input path="name"/>
@@ -49,8 +46,11 @@
 	            <form:errors path="dateAdded"/>
 	            <form:input type="date" path="dateAdded"/>
 	        </p>
-	        <input type="submit" value="Add It!"/>
-	    </form:form>
+	        <form:hidden path="user" />
+	        <input type="submit" value="Update It!"/>
+		</form:form>
+
+		
     </div>
 
 </body>
