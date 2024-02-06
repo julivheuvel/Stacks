@@ -1,5 +1,7 @@
 package com.vdh.jingle.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -33,6 +35,23 @@ public class SongController {
 		this.songService = songService;
 	}
 	
+//	=========================
+//	VIEW SONG
+//	=========================
+	@GetMapping("/songs/{id}/view")
+    public String showSong(@PathVariable("id") Long id, Model model, 
+    		HttpSession session, RedirectAttributes redirectAttributes) {
+    	Long loggedInUserId = (Long)session.getAttribute("user_id");
+    	
+    	if(loggedInUserId == null) {
+    		redirectAttributes.addFlashAttribute("notAllowed", "must be logged in to view this page" );
+    		return "redirect:/";
+    	}
+    	
+    	Song song = songService.findSong(id);
+    	model.addAttribute("song", song);
+    	return "viewMusic.jsp";
+    }
 	
 //	=========================
 //	ADD SONG
@@ -115,7 +134,10 @@ public class SongController {
 		 songService.create(updateSong);
 		 return "redirect:/dashboard";
 	 }
-	    
+	 
+//		=========================
+//		DELETE SONG
+//		=========================		    
 	 @GetMapping("/songs/{id}/delete")
 	 public String deleteSong(@PathVariable("id") Long id, Model model, HttpSession session, RedirectAttributes redirectAttributes) {
 		Long loggedInUserId = (Long)session.getAttribute("user_id");
@@ -131,6 +153,58 @@ public class SongController {
 		songService.deleteSong(song);
 		return "redirect:/dashboard";
 	 }
+	 
+//		=========================
+//		LIKE SONG
+//		=========================		 
+	 @GetMapping("/songs/{id}/like")
+	    public String likeSong(@PathVariable("id") Long id, 
+	    		RedirectAttributes redirectAttributes, HttpSession session) {
+	    	Long loggedInUserId = (Long)session.getAttribute("user_id");
+	    	
+	    	if(loggedInUserId == null) {
+	    		redirectAttributes.addFlashAttribute("notAllowed", "must be logged for this action" );
+	    		return "redirect:/";
+	    	}
+	    	
+	    	
+	    	User user = userService.findUser(loggedInUserId);
+	    	Song song = songService.findSong(id);
+	    	List<User> usersLiked = song.getUsersLiked();
+	    	if(usersLiked.contains(user)) {
+	    		return "redirect:/dashboard";
+	    	}
+	    	usersLiked.add(user);
+	    	song.setUsersLiked(usersLiked);
+	    	songService.create(song);
+	    	return "redirect:/dashboard";
+	    }
+	 
+//		=========================
+//		UNLIKE SONG
+//		=========================		 
+	 @GetMapping("/songs/{id}/unlike")
+	    public String unlikeSong(@PathVariable("id") Long id, 
+	    		RedirectAttributes redirectAttributes, HttpSession session) {
+	    	Long loggedInUserId = (Long)session.getAttribute("user_id");
+	    	
+	    	if(loggedInUserId == null) {
+	    		redirectAttributes.addFlashAttribute("notAllowed", "must be logged for this action" );
+	    		return "redirect:/";
+	    	}
+	    	
+	    	
+	    	User user = userService.findUser(loggedInUserId);
+	    	Song song = songService.findSong(id);
+	    	List<User> usersLiked = song.getUsersLiked();
+	    	if(!usersLiked.contains(user)) {
+	    		return "redirect:/dashboard";
+	    	}
+	    	usersLiked.remove(user);
+	    	song.setUsersLiked(usersLiked);
+	    	songService.create(song);
+	    	return "redirect:/dashboard";
+	    }
 
 
 

@@ -2,6 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ page isErrorPage="true" %>
 
 <!DOCTYPE html>
@@ -24,28 +25,39 @@
     </nav>
 
     <div class="container mt-3">        
-        <h1 class="text-center">Dashboard</h1>
+        <h1 class="text-center">Welcome ${loggedInUser.firstName} ${loggedInUser.lastName}</h1>
 
         <table class="table">
             <tr>
                 <th>Song</th>
                 <th>Album</th>
                 <th>Artist</th>
-                <th>Date Created</th>
+                <th>Year</th>
                 <th>Created By</th>
                 <th>Likes</th>
                 <th>Actions</th>
             </tr>
                 <c:forEach items="${songs}" var="song">
                 <tr>
-                    <td><a href="/songs/${song.id}">${song.name}</a></td>
+                    <td><a href="/songs/${song.id}/view">${song.name}</a></td>
                     <td>${song.album}</td>
                     <td>${song.artist}</td>
-                    <td>${song.dateAdded}</td>
+
+                    <td><fmt:formatDate type ="date" value="${song.dateAdded}" pattern="yyyy"/></td>
                     <td>${song.user.firstName} ${song.user.lastName}</td>
                     <td>${song.usersLiked.size()}</td>
                     <td>
-                        <a href="#">Like</a>
+
+                        <c:choose>
+                            <c:when test='${song.usersLiked.contains(loggedInUser)}'>
+                                <a href="/songs/${song.id}/unlike">unlike</a>
+                            </c:when>
+                            <c:otherwise>
+                                <a href="/songs/${song.id}/like">like</a>
+                            </c:otherwise>
+                        </c:choose>
+                        
+                        
                         <c:if test="${loggedInUser.id == song.user.id}">
                             <a href="/songs/${song.id}/edit">Edit</a>
                             <a href="/songs/${song.id}/delete">Delete</a>
