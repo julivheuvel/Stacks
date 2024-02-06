@@ -3178,3 +3178,23 @@ Caused by: java.io.IOException: The pipe is being closed
 	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
 	... 12 more
+
+!ENTRY Activator 4 0 2024-02-04 15:41:48.556
+!MESSAGE Cannot invoke "org.osgi.framework.BundleContext.addBundleListener(org.osgi.framework.BundleListener)" because the return value of "org.osgi.framework.Bundle.getBundleContext()" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.osgi.framework.BundleContext.addBundleListener(org.osgi.framework.BundleListener)" because the return value of "org.osgi.framework.Bundle.getBundleContext()" is null
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel.addMavenInitializationIssueEventHandling(LocalBootDashModel.java:162)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel.<init>(LocalBootDashModel.java:136)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalRunTarget.createSectionModel(LocalRunTarget.java:63)
+	at org.springframework.ide.eclipse.boot.dash.model.BootDashModelManager$RunTargetChangeListener.gotValue(BootDashModelManager.java:90)
+	at org.springframework.ide.eclipse.boot.dash.model.BootDashModelManager$RunTargetChangeListener.gotValue(BootDashModelManager.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.addListener(LiveExpression.java:171)
+	at org.springframework.ide.eclipse.boot.dash.model.BootDashModelManager.getModels(BootDashModelManager.java:62)
+	at org.springframework.ide.eclipse.boot.dash.model.BootDashViewModel.getSectionModels(BootDashViewModel.java:114)
+	at org.springframework.ide.eclipse.boot.dash.model.remote.GenericRemoteAppElementDataContributor.lambda$0(GenericRemoteAppElementDataContributor.java:36)
+	at org.springsource.ide.eclipse.commons.livexp.core.ObservableSet$Builder$1.compute(ObservableSet.java:46)
+	at org.springsource.ide.eclipse.commons.livexp.core.ObservableSet$Builder$1.compute(ObservableSet.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:74)
+	at org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression.syncRefresh(AsyncLiveExpression.java:134)
+	at org.springsource.ide.eclipse.commons.livexp.core.AsyncLiveExpression$1.run(AsyncLiveExpression.java:101)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

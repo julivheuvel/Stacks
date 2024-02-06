@@ -1006,3 +1006,6 @@ Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was
 2024-02-04 15:40:23,882 [Worker-158: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-02-04 15:40:23,882 [Worker-158: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-02-04 15:40:23,884 [Worker-158: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\aaron\Desktop\Projects\Stacks\Java_Jingles\jingle\src\test\resources
+2024-02-04 15:41:16,418 [Worker-159: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-02-04 15:41:16,418 [Worker-159: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-02-04 15:41:16,420 [Worker-159: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\aaron\Desktop\Projects\Stacks\Java_Jingles\jingle\src\test\resources
