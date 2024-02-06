@@ -18,6 +18,7 @@
         <div>
         </div>
         <div>
+            <a href="/dashboard">Dashboard</a>
             <a href="/logout">Logout</a>
         </div>
     </nav>

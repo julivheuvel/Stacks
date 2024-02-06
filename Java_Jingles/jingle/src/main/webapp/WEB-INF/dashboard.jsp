@@ -48,7 +48,7 @@
                         <a href="#">Like</a>
                         <c:if test="${loggedInUser.id == song.user.id}">
                             <a href="/songs/${song.id}/edit">Edit</a>
-                            <a href="#">Delete</a>
+                            <a href="/songs/${song.id}/delete">Delete</a>
                         </c:if>
                     </td>
                 </tr>

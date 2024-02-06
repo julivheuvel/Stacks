@@ -17,6 +17,7 @@
     <nav class="container d-flex justify-content-between mt-3">
         <div></div>
         <div>
+            <a href="/dashboard">Dashboard</a>
             <a href="/logout">Logout</a>
         </div>
     </nav>
@@ -24,27 +25,35 @@
     <div class="container border mt-3">        
         <h1 class="text-center border">Update ${song.name}</h1>
 		<p class = "text-center text-danger">${notAllowed}</p>
-		
+
 		<form:form action="/songs/${song.id}/update" method="PUT" modelAttribute="song">
 			<p>
-	            <form:label path="name">Name:</form:label>
-	            <form:errors path="name"/>
-	            <form:input path="name"/>
+	            <form:errors class="text-danger" path="name"/>
+	            <div>
+					<form:label path="name">Name:</form:label>
+					<form:input path="name"/>
+				</div>
 	        </p>
 	        <p>
-	            <form:label path="album">Album:</form:label>
-	            <form:errors path="album"/>
-	            <form:input path="album"/>
+	            <form:errors class="text-danger" path="album"/>
+	            <div>
+					<form:label path="album">Album:</form:label>
+					<form:input path="album"/>
+				</div>
 	        </p>
 	        <p>
-	            <form:label path="artist">Artist:</form:label>
-	            <form:errors path="artist"/>
-	            <form:input path="artist"/>
+	            <form:errors class="text-danger" path="artist"/>
+	            <div>
+					<form:label path="artist">Artist:</form:label>
+					<form:input path="artist"/>
+				</div>
 	        </p>
 	        <p>
-	            <form:label path="dateAdded">Date Created:</form:label>
-	            <form:errors path="dateAdded"/>
-	            <form:input type="date" path="dateAdded"/>
+	            <form:errors class="text-danger" path="dateAdded"/>
+	            <div>
+					<form:label path="dateAdded">Date Created:</form:label>
+					<form:input type="date" path="dateAdded"/>
+				</div>
 	        </p>
 	        <form:hidden path="user" />
 	        <input type="submit" value="Update It!"/>

@@ -99,13 +99,38 @@ public class SongController {
     }
 	 
 	 @PutMapping("/songs/{id}/update")
-	 public String updateSong(@Valid @ModelAttribute("song") Song updateSong, BindingResult result) {
-		  if(result.hasErrors()) {
+	 public String updateSong(@Valid @ModelAttribute("song") Song updateSong, BindingResult result, HttpSession session, RedirectAttributes redirectAttributes) {
+		Long loggedInUserId = (Long)session.getAttribute("user_id");
+	    	
+		if(loggedInUserId == null) {
+			redirectAttributes.addFlashAttribute("notAllowed", "must be logged in to view this page" );
+			return "redirect:/";
+		} 
+		 
+		 
+		 if(result.hasErrors()) {
 			  return "updateMusic.jsp";
 		  }
+		 
+		 songService.create(updateSong);
 		 return "redirect:/dashboard";
 	 }
 	    
+	 @GetMapping("/songs/{id}/delete")
+	 public String deleteSong(@PathVariable("id") Long id, Model model, HttpSession session, RedirectAttributes redirectAttributes) {
+		Long loggedInUserId = (Long)session.getAttribute("user_id");
+	    	
+    	if(loggedInUserId == null) {
+    		redirectAttributes.addFlashAttribute("notAllowed", "must be logged in to view this page" );
+    		return "redirect:/";
+    	} 
+    	
+    	
+    	Song song = songService.findSong(id);
+    	
+		songService.deleteSong(song);
+		return "redirect:/dashboard";
+	 }
 
 
 
