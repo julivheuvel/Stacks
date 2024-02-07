@@ -1,20 +1,32 @@
-var builder = WebApplication.CreateBuilder(args);
+//update <ProjectName> with name of project
+using Creatives.Models;
+using Microsoft.EntityFrameworkCore;
 
-// Add services to the container.
+
+var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpContextAccessor();  
+builder.Services.AddSession(); 
+
+// Create a variable to hold your connection string
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<CreativesContext>(options =>
+{
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
 
 var app = builder.Build();
+
+app.UseStaticFiles();
+app.UseSession(); 
+app.UseRouting();
+app.UseAuthorization();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
