@@ -17,7 +17,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
+    <!-- <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
@@ -30,7 +30,7 @@
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
+  </ol> -->
 </details>
 
 
@@ -43,7 +43,7 @@ Java Jingles is a web application developed using the Spring Boot framework with
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+<!-- 
 
 ### Built With
 
@@ -54,7 +54,7 @@ Java Jingles is a web application developed using the Spring Boot framework with
 * [![Svelte][Svelte.dev]][Svelte-url]
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![JQuery][JQuery.com]][JQuery-url] -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
