@@ -1,0 +1,30 @@
+@model Art
+
+
+<div class="container">
+    <h2>New Art</h2>
+
+    <form
+        class="shadow p-3 rounded"
+        asp-controller="Art"
+        asp-action="CreateArt"
+        method="POST">
+
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <span asp-validation-for="Name" class="text-danger font-weight bold"></span>
+            <input asp-for="Name" class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description"></label>
+            <span asp-validation-for="Description" class="text-danger font-weight bold"></span>
+            <input asp-for="Description" class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Price"></label>
+            <span asp-validation-for="Price" class="text-danger font-weight bold"></span>
+            <input asp-for="Price" type="number" class="form-control"/>
+        </div>
+        <button class="btn btn-success">Add!</button>
+    </form>
+</div>

@@ -1,8 +1,49 @@
 @{
     ViewData["Title"] = "Dashboard";
 }
+@model List<Art>
 
 
 <div class="container">
     <p>here's some dashboard content</p>
+
+    
+    <h2>All Art</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(Art a in Model)
+            {
+                <tr>
+                    <td>
+                        <a href="/art/@a.ArtId/view">@a.Name</a>
+                    </td>
+                    <td>@a.Description</td>
+                    <td>@a.Price</td>
+                    <td class="d-flex gap-2">
+                        @if(a.UserId == Context.Session.GetInt32("UUID"))
+                        {
+                            <form
+                                class=""
+                                asp-controller="Art"
+                                asp-action="DeleteArt"
+                                asp-route-deletedArtId="@a.ArtId"
+                                method="POST">
+                                <button class="text-danger bg-transparent border-0 p-0">Delete</button>
+                            </form>
+                            <a href="/art/@a.ArtId/edit" class="text-warning text-decoration-none">Edit</a>
+                        }
+                        <a href="#" class="text-primary text-decoration-none">Like</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

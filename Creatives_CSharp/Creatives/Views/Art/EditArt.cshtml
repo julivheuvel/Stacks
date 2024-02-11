@@ -1,0 +1,33 @@
+@model Art
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container">
+    <h2>Edit Art</h2>
+
+    <form
+        class="shadow p-3 rounded"
+        asp-controller="Art"
+        asp-action="UpdateArt"
+        asp-route-artId="@Model.ArtId"
+        method="POST">
+
+        <div class="mb-3">
+            <label asp-for="@Model.Name"></label>
+            <span asp-validation-for="@Model.Name" class="text-danger font-weight bold"></span>
+            <input asp-for="@Model.Name" class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label asp-for="@Model.Description"></label>
+            <span asp-validation-for="@Model.Description" class="text-danger font-weight bold"></span>
+            <input asp-for="@Model.Description" class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label asp-for="@Model.Price"></label>
+            <span asp-validation-for="@Model.Price" class="text-danger font-weight bold"></span>
+            <input asp-for="@Model.Price" type="number" class="form-control"/>
+        </div>
+        <button class="btn btn-success">Edit!</button>
+    </form>
+</div>
