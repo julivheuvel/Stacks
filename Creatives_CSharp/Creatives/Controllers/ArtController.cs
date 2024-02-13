@@ -42,21 +42,31 @@ public class ArtController : Controller
     // Dashboard
     // ================
     [HttpGet("/dashboard")]
-    public IActionResult Dashboard()
+    public IActionResult Dashboard(string search)
     {
         if(!loggedIn || uid == null)
         {
             return RedirectToAction("Welcome", "User");
         }
 
-        
-
+        if(search != null)
+        {
+            List<Art> filteredArt = db.Arts
+                .Include(a => a.Poster)
+                .Include(a => a.Followers)
+                .Where(a => a.Artist.Contains(search)
+                    || a.Name.Contains(search))
+                .ToList();
+            return View("Dashboard", filteredArt);
+            
+        }
 
         // ========
         // Get All Art
         // ========
         List<Art> allArt = db.Arts
             .Include(a => a.Poster)
+            .Include(a => a.Followers)
             .ToList();
 
 
@@ -153,9 +163,9 @@ public class ArtController : Controller
         return View("EditArt", art);
     }
 
-    // ============================================
+    // =======================
     // Edit Art Post
-    // ============================================
+    // =======================
     [HttpPost("/art/{artId}/update")]
     public IActionResult UpdateArt(Art editedArt, int artId)
     {
@@ -177,6 +187,7 @@ public class ArtController : Controller
         }
 
         dbArt.Name = editedArt.Name;
+        dbArt.Artist = editedArt.Artist;
         dbArt.Description = editedArt.Description;
         dbArt.Price = editedArt.Price;
         dbArt.UpdatedAt = DateTime.Now;
@@ -186,12 +197,12 @@ public class ArtController : Controller
         db.SaveChanges();
 
 
-        return Dashboard();
+        return RedirectToAction("Dashboard");
     }
 
-    // ============================================
+    // =======================
     // Delete Art
-    // ============================================
+    // =======================
     [HttpPost("/art/{deletedArtId}/delete")]
     public IActionResult DeleteArt(int deletedArtId)
     {
@@ -207,7 +218,42 @@ public class ArtController : Controller
             db.SaveChanges();
         }
 
-        return Dashboard();
+        return RedirectToAction("Dashboard");
 
     }
+
+    // =======================
+    // Like Art
+    // =======================
+    [HttpPost("/art/{artId}/like")]
+    public IActionResult Like(int artId)
+    {
+        
+        if(!loggedIn || uid == null)
+        {
+            return RedirectToAction("Welcome", "User");
+        }   
+
+    Like? existingLike = db.Likes
+        .FirstOrDefault(l => l.ArtId == artId && l.UserId == (int) uid);
+
+    if(existingLike == null)
+    {
+        Like newLike = new Like()
+        {
+            UserId = (int)uid,
+            ArtId = artId
+        };
+        db.Likes.Add(newLike);
+    }
+    else
+    {
+        db.Likes.Remove(existingLike);
+    }
+
+    db.SaveChanges();
+
+    return RedirectToAction("Dashboard");
+    }
+
 }

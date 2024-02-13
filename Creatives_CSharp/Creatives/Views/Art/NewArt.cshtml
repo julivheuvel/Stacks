@@ -16,6 +16,11 @@
             <input asp-for="Name" class="form-control"/>
         </div>
         <div class="mb-3">
+            <label asp-for="Artist"></label>
+            <span asp-validation-for="Artist" class="text-danger font-weight bold"></span>
+            <input asp-for="Artist" class="form-control"/>
+        </div>
+        <div class="mb-3">
             <label asp-for="Description"></label>
             <span asp-validation-for="Description" class="text-danger font-weight bold"></span>
             <input asp-for="Description" class="form-control"/>

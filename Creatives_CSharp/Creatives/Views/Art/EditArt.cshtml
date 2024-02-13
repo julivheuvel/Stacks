@@ -19,6 +19,11 @@
             <input asp-for="@Model.Name" class="form-control"/>
         </div>
         <div class="mb-3">
+            <label asp-for="@Model.Artist"></label>
+            <span asp-validation-for="@Model.Artist" class="text-danger font-weight bold"></span>
+            <input asp-for="@Model.Artist" class="form-control"/>
+        </div>
+        <div class="mb-3">
             <label asp-for="@Model.Description"></label>
             <span asp-validation-for="@Model.Description" class="text-danger font-weight bold"></span>
             <input asp-for="@Model.Description" class="form-control"/>

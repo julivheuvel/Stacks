@@ -5,33 +5,57 @@
 
 
 <div class="container">
-    <p>here's some dashboard content</p>
+    <h2 class="text-center">All Art</h2>
 
-    
-    <h2>All Art</h2>
-    <table>
+    <form
+        asp-controller="Art"
+        asp-action="Dashboard"
+        method="GET"
+    >
+        <div class="d-flex justify-content-center gap-3 mb-3">
+            <input type="text" class="form-control w-50" name="search" placeholder="search..">
+            <button class="text-primary bg-transparent border-0 p-0">search</button>
+        </div>
+    </form>
+
+    <table class="d-flex flex-column ">
         <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Actions</th>
+            <tr class="d-flex border">
+                <th class="w-50 text-center">Name</th>
+                <th class="w-50 text-center">Artist</th>
+                <th class="w-50 text-center">Description</th>
+                <th class="w-50 text-center">Price</th>
+                <th class="w-50 text-center d-flex justify-content-center align-items-center gap-3">
+                    <div>Total Likes</div>
+                    <form
+                        asp-controller="Art"
+                        asp-action="Dashboard"
+                        method="GET"
+                    >
+                        <input type="hidden" class="form-control w-50" name="totalLikes" value="true">
+                        <button class="text-primary bg-transparent border-0 p-0">^</button>
+                    </form>
+                </th>
+                <th class="w-50 text-center">Actions</th>
             </tr>
         </thead>
         <tbody>
             @foreach(Art a in Model)
             {
-                <tr>
-                    <td>
+                <tr class="d-flex justify-content-center w-100 border">
+                    <td class="w-50 text-center border d-flex justify-content-center align-items-center">
                         <a href="/art/@a.ArtId/view">@a.Name</a>
                     </td>
-                    <td>@a.Description</td>
-                    <td>@a.Price</td>
-                    <td class="d-flex gap-2">
+                    <td class="w-50 text-center border d-flex justify-content-center align-items-center">@a.Artist</td>
+                    <td class="w-50 text-center border d-flex justify-content-center align-items-center">@a.Description</td>
+                    <td class="w-50 text-center border d-flex justify-content-center align-items-center">$@a.Price</td>
+                    <td class="w-50 text-center border d-flex justify-content-center align-items-center gap-3">
+                        <div>@a.Followers.Count</div>
+                    </td>
+                    <td class="w-50 text-center border d-flex justify-content-center align-items-center" class="d-flex gap-2">
                         @if(a.UserId == Context.Session.GetInt32("UUID"))
                         {
                             <form
-                                class=""
                                 asp-controller="Art"
                                 asp-action="DeleteArt"
                                 asp-route-deletedArtId="@a.ArtId"
@@ -40,7 +64,24 @@
                             </form>
                             <a href="/art/@a.ArtId/edit" class="text-warning text-decoration-none">Edit</a>
                         }
-                        <a href="#" class="text-primary text-decoration-none">Like</a>
+                        
+                        @{ bool alreadyLiked = a.Followers.Any(likes => likes.UserId == Context.Session.GetInt32("UUID"));}
+                        <form
+                            asp-controller="Art"
+                            asp-action="Like"
+                            asp-route-artId="@a.ArtId"
+                            method="POST"
+                        >
+                            <button class="text-primary bg-transparent border-0 p-0">
+                                @if(alreadyLiked)
+                                {
+                                    <span>Unlike</span>
+                                }
+                                else {
+                                    <span>Like</span>
+                                }
+                            </button>
+                        </form>
                     </td>
                 </tr>
             }

@@ -18,6 +18,12 @@ public class Art
     // ================
     [Required(ErrorMessage=" is required!")]
     public string Name { get; set; }
+
+    // ================
+    // Artist
+    // ================
+    [Required(ErrorMessage=" is required!")]
+    public string Artist { get; set; }
     
     // ================
     // Description
