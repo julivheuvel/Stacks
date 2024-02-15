@@ -5,6 +5,8 @@ function Navigation() {
   return (
     <fieldset>
         <legend>Navbar</legend>
+        <Link to="/coffee">Home</Link>
+        {/* <Link to="/coffee">Home</Link> */}
     </fieldset>
   )
 }
