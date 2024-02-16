@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
-function ViewOne(props) {
+const ViewOne = (props) => {
 
    const { id } = useParams();
    console.log(id)
