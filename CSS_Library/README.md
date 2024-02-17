@@ -132,7 +132,28 @@ NEED TO UPDATE
 
 
 ### Utilities
-Background
+<details>
+    <summary>Contents</summary>
+        <ol>
+            <li>
+                <a href="#background">Baackground</a>
+            </li>
+            <li>
+                <a href="#height">Height</a>
+            </li>
+            <li>
+                <a href="#width">Width</a>
+            </li>
+            <li>
+                <a href="#text">Text</a>
+            </li>
+            <li>
+                <a href="#utilities">Utilities</a>
+            </li>
+        </ol>
+</details>
+
+#### Background
 Customize background with colors. All predefined css colors can be called with the class prefix `.bg-colorName`and can append tint or shade variation followed by degree of shade defined by 1-9 representing 10% intervals. Opacity of bg color can be defined on the base color by appending `-op-%` from 1%-99%
 
 | background    |  class name               | 
@@ -145,13 +166,13 @@ Customize background with colors. All predefined css colors can be called with t
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
 
-    borders
-    colors
-    display
-    flex
-    float
+#### Borders
+#### Colors
+#### Display
+#### Flex
+#### Float
 
-Height
+#### Height
 Customizing with height can be defined by either `.h` or `.vh` and appended by a value ranging from 1 through 200. Default unit for `.h` will be in % unless otherwise defined directly after value, i.e. `.h-10px`
 
 | height                |  class name           | 
@@ -168,18 +189,18 @@ Customizing with height can be defined by either `.h` or `.vh` and appended by a
 
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
-    interations
-    link
-    object-fit
-    opacity
-    overflow
-    position
-    shadows
-    sizing
-    spacing
-    tables
+#### Interations
+#### Link
+#### Object-fit
+#### Opacity
+#### Overflow
+#### Position
+#### Shadows
+#### Sizing
+#### Spacing
+#### Tables
 
-Width
+#### Width
 Customizing with width can be defined by either `.w` or `.vw` and appended by a value ranging from 1 through 200. Default unit for `.w` will be in % unless otherwise defined directly after value, i.e. `.w-10px`
 
 | width                |  class name           | 
@@ -196,7 +217,7 @@ Customizing with width can be defined by either `.w` or `.vw` and appended by a 
 
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
-Text
+#### Text
 Customize text with colors. All predefined css colors can be called with the class prefix `.t-colorName`and can append tint or shade variation followed by degree of shade defined by 1-9 representing 10% intervals. Opacity of text color can be defined on the base color by appending `-op-%` from 1%-99%
 
 | text          |  class name              | 
@@ -225,9 +246,9 @@ Text Wrap
 
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
-    vertical align
-    visibility
-    z-index
+#### Vertical align
+#### Visibility
+#### Z-Index
 
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
