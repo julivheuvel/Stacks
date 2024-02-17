@@ -131,7 +131,13 @@
 
 
 ### Utilities
-    background
+    Background
+        | background    |  class name           | 
+        | : --------- : | : ----------------- : |
+        | base colors   | .bg-colorName         |
+        | tinted colors | .bg-colorName-light-# |
+        | shaded colors | .bg-colorName-dark-#  |
+
     borders
     colors
     display
@@ -147,7 +153,13 @@
     sizing
     spacing
     tables
-    text
+
+    Text
+        | text          |  class name          | 
+        | : --------- : | : ---------------- : |
+        | base colors   | .t-colorName         |
+        | tinted colors | .t-colorName-light-# |
+        | shaded colors | .t-colorName-dark-#  |
     vertical align
     visibility
     z-index

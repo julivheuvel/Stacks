@@ -1,0 +1,15 @@
+@each $key, $val in $colorMap {
+
+    .bg-#{$key} {
+        background-color: $val;
+    }
+
+    @for $i from 1 through 9 {
+        .bg-#{$key}-light-#{$i} {
+            background-color: mix(white, $val,$i * 10%);
+        }
+        .bg-#{$key}-dark-#{$i} {
+            background-color: mix(black, $val,$i * 10%);
+        }
+    }
+}

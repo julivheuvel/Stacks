@@ -1,0 +1,15 @@
+@each $key, $val in $colorMap {
+
+    .t-#{$key} {
+        color: $val;
+    }
+
+    @for $i from 1 through 9 {
+        .t-#{$key}-light-#{$i} {
+            color: mix(white, $val,$i * 10%);
+        }
+        .t-#{$key}-dark-#{$i} {
+            color: mix(black, $val,$i * 10%);
+        }
+    }
+}
