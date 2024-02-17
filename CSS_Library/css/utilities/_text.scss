@@ -3,6 +3,12 @@
     .t-#{$key} {
         color: $val;
     }
+    @for $i from 1 through 99 {
+        .t-#{$key}-op-#{$i} {
+            color: $val;
+            opacity: #{$i}#{"%"};
+        }
+    }
 
     @for $i from 1 through 9 {
         .t-#{$key}-light-#{$i} {

@@ -131,12 +131,15 @@
 
 
 ### Utilities
-    Background
-        | background    |  class name           | 
-        | : --------- : | : ----------------- : |
-        | base colors   | .bg-colorName         |
-        | tinted colors | .bg-colorName-light-# |
-        | shaded colors | .bg-colorName-dark-#  |
+Background
+Customize background with colors. All predefined css colors can be called with the class prefix `.bg-colorName`and can append tint or shade variation followed by degree of shade defined by 1-9 representing 10% intervals. Opacity of bg color can be defined on the base color by appending `-op-%` from 1%-99%
+
+| background    |  class name           | 
+| :-----------: | :-------------------: |
+| base colors   | .bg-colorName         |
+| bg opacity    | .bg-colorName-op-%    |
+| tinted colors | .bg-colorName-light-# |
+| shaded colors | .bg-colorName-dark-#  |
 
     borders
     colors
@@ -154,12 +157,15 @@
     spacing
     tables
 
-    Text
-        | text          |  class name          | 
-        | : --------- : | : ---------------- : |
-        | base colors   | .t-colorName         |
-        | tinted colors | .t-colorName-light-# |
-        | shaded colors | .t-colorName-dark-#  |
+Text
+Customize text with colors. All predefined css colors can be called with the class prefix `.t-colorName`and can append tint or shade variation followed by degree of shade defined by 1-9 representing 10% intervals. Opacity of text color can be defined on the base color by appending `-op-%` from 1%-99%
+
+| text          |  class name          | 
+| :-----------: | :------------------: |
+| base colors   | .t-colorName         |
+| text opacity  | .t-colorName-op-%    |
+| tinted colors | .t-colorName-light-# |
+| shaded colors | .t-colorName-dark-#  |
     vertical align
     visibility
     z-index

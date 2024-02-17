@@ -4,6 +4,13 @@
         background-color: $val;
     }
 
+    @for $i from 1 through 99 {
+        .bg-#{$key}-op-#{$i} {
+            background-color: $val;
+            opacity: #{$i}#{"%"};
+        }
+    }
+
     @for $i from 1 through 9 {
         .bg-#{$key}-light-#{$i} {
             background-color: mix(white, $val,$i * 10%);
