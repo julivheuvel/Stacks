@@ -1,0 +1,71 @@
+@for $i from 1 through 200 {
+
+    // =========
+    // %
+    // =========
+    .w-#{$i} {
+        width: #{$i}#{"%"}
+    }
+    .w-#{$i}-max {
+        max-width: #{$i}#{"%"}
+    }
+    .w-#{$i}-min {
+        min-width: #{$i}#{"%"}
+    }
+
+    // =========
+    // px
+    // =========
+    .w-#{$i}#{"px"} {
+        width: #{$i}#{"px"};
+    }
+    .w-#{$i}#{"px"}-max {
+        max-width: #{$i}#{"px"};
+    }
+    .w-#{$i}#{"px"}-min {
+        min-width: #{$i}#{"px"};
+    }
+
+    // =========
+    // em
+    // =========
+    .w-#{$i}#{"em"} {
+        width: #{$i}#{"em"};
+    }
+    .w-#{$i}#{"em"}-max {
+        max-width: #{$i}#{"em"};
+    }
+    .w-#{$i}#{"em"}-min {
+        min-width: #{$i}#{"em"};
+    }
+
+    // =========
+    // rem
+    // =========
+    .w-#{$i}#{"rem"} {
+        width: #{$i}#{"rem"};
+    }
+    .w-#{$i}#{"rem"}-max {
+        max-width: #{$i}#{"rem"};
+    }
+    .w-#{$i}#{"rem"}-min {
+        min-width: #{$i}#{"rem"};
+    }
+
+
+
+    
+    // =========
+    // Viewwidth
+    // =========
+    .vw-#{$i} {
+        width: #{$i}#{"vw"}
+    }
+    .vw-#{$i}-max {
+        max-width: #{$i}#{"vw"}
+    }
+    .vw-#{$i}-min {
+        min-width: #{$i}#{"vw"}
+    }
+
+}

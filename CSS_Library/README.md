@@ -142,11 +142,32 @@ Customize background with colors. All predefined css colors can be called with t
 | tinted colors | .bg-{colorName}-light-{#} |
 | shaded colors | .bg-{colorName}-dark-{#}  |
 
+<p align="right">(<a href="#documentation">back to documentation</a>)</p>
+
+
     borders
     colors
     display
     flex
     float
+
+Height
+Customizing with height can be defined by either `.h` or `.vh` and appended by a value ranging from 1 through 200. Default unit for `.h` will be in % unless otherwise defined directly after value, i.e. `.h-10px`
+
+| height                |  class name           | 
+| :-------------------: | :-------------------: |
+| base                  | .h-{value}            |
+| base max              | .h-{value}-max        |
+| base min              | .h-{value}-min        |
+| base with unit        | .h-{value}{unit}      |
+| base with unit max    | .h-{value}{unit}-max  |
+| base with unit min    | .h-{value}{unit}-min  |
+| vh base               | .vh-{value}           |
+| vh base max           | .vh-{value}-max       |
+| vh base min           | .vh-{value}-min       |
+
+<p align="right">(<a href="#documentation">back to documentation</a>)</p>
+
     interations
     link
     object-fit
@@ -158,6 +179,23 @@ Customize background with colors. All predefined css colors can be called with t
     spacing
     tables
 
+Width
+Customizing with width can be defined by either `.w` or `.vw` and appended by a value ranging from 1 through 200. Default unit for `.w` will be in % unless otherwise defined directly after value, i.e. `.w-10px`
+
+| width                |  class name           | 
+| :-------------------: | :-------------------: |
+| base                  | .w-{value}            |
+| base max              | .w-{value}-max        |
+| base min              | .w-{value}-min        |
+| base with unit        | .w-{value}{unit}      |
+| base with unit max    | .w-{value}{unit}-max  |
+| base with unit min    | .w-{value}{unit}-min  |
+| vw base               | .vw-{value}           |
+| vw base max           | .vw-{value}-max       |
+| vw base min           | .vw-{value}-min       |
+
+<p align="right">(<a href="#documentation">back to documentation</a>)</p>
+
 Text
 Customize text with colors. All predefined css colors can be called with the class prefix `.t-colorName`and can append tint or shade variation followed by degree of shade defined by 1-9 representing 10% intervals. Opacity of text color can be defined on the base color by appending `-op-%` from 1%-99%
 
@@ -167,6 +205,26 @@ Customize text with colors. All predefined css colors can be called with the cla
 | text opacity  | .t-{colorName}-op-{%}    |
 | tinted colors | .t-{colorName}-light-{#} |
 | shaded colors | .t-{colorName}-dark-{#}  |
+
+Text Align
+| text      |  class name      | 
+| :-------: | :--------------: |
+| start     | .t-align-start   |
+| end       | .t-align-end     |
+| center    | .t-align-center  |
+| justify   | .t-align-justify |
+
+Text Wrap
+| text     |  class name     | 
+| :------: | :-------------: |
+| wrap     | .t-wrap-wrap    |
+| nowrap   | .t-wrap-nowrap  |
+| balance  | .t-wrap-balance |
+| pretty   | .t-wrap-pretty  |
+| stable   | .t-wrap-stable  |
+
+<p align="right">(<a href="#documentation">back to documentation</a>)</p>
+
     vertical align
     visibility
     z-index

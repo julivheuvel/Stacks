@@ -1,0 +1,71 @@
+@for $i from 1 through 200 {
+
+    // =========
+    // %
+    // =========
+    .h-#{$i} {
+        height: #{$i}#{"%"}
+    }
+    .h-#{$i}-max {
+        max-height: #{$i}#{"%"}
+    }
+    .h-#{$i}-min {
+        min-height: #{$i}#{"%"}
+    }
+
+    // =========
+    // px
+    // =========
+    .h-#{$i}#{"px"} {
+        height: #{$i}#{"px"};
+    }
+    .h-#{$i}#{"px"}-max {
+        max-height: #{$i}#{"px"};
+    }
+    .h-#{$i}#{"px"}-min {
+        min-height: #{$i}#{"px"};
+    }
+
+    // =========
+    // em
+    // =========
+    .h-#{$i}#{"em"} {
+        height: #{$i}#{"em"};
+    }
+    .h-#{$i}#{"em"}-max {
+        max-height: #{$i}#{"em"};
+    }
+    .h-#{$i}#{"em"}-min {
+        min-height: #{$i}#{"em"};
+    }
+
+    // =========
+    // rem
+    // =========
+    .h-#{$i}#{"rem"} {
+        height: #{$i}#{"rem"};
+    }
+    .h-#{$i}#{"rem"}-max {
+        max-height: #{$i}#{"rem"};
+    }
+    .h-#{$i}#{"rem"}-min {
+        min-height: #{$i}#{"rem"};
+    }
+
+
+
+    
+    // =========
+    // ViewHeight
+    // =========
+    .vh-#{$i} {
+        height: #{$i}#{"vh"}
+    }
+    .vh-#{$i}-max {
+        max-height: #{$i}#{"vh"}
+    }
+    .vh-#{$i}-min {
+        min-height: #{$i}#{"vh"}
+    }
+
+}

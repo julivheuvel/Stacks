@@ -1,5 +1,9 @@
-@each $key, $val in $colorMap {
+// ===============
+// Color
+// ===============
 
+@each $key, $val in $colorMap {
+    
     .t-#{$key} {
         color: $val;
     }
@@ -9,13 +13,53 @@
             opacity: #{$i}#{"%"};
         }
     }
-
+    
     @for $i from 1 through 9 {
         .t-#{$key}-light-#{$i} {
             color: mix(white, $val,$i * 10%);
         }
         .t-#{$key}-dark-#{$i} {
             color: mix(black, $val,$i * 10%);
+        }
+    }
+}
+
+
+$text : (
+    // ===============
+    // Alignment
+    // ===============
+    "text-align" : (
+        "prefix" : "t-align",
+        "values" : (
+            "start" : start,
+            "end" : end,
+            "center" : center,
+            "justify" : justify,
+        )
+    ),
+    // ===============
+    // Wrap
+    // ===============
+    "text-wrap" : (
+        "prefix" : "t-wrap",
+        "values" : (
+            "wrap" : wrap,
+            "nowrap" : nowrap,
+            "balance" : balance,
+            "pretty" : pretty,
+            "stable" : stable,
+        )
+    ),
+);
+
+@each $property, $map in $text {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $key, $val in $values {
+        .#{$prefix}-#{$key} {
+            #{$property}: $val;
         }
     }
 }
