@@ -134,9 +134,9 @@ NEED TO UPDATE
 ### Utilities
 <details>
     <summary>Contents</summary>
-        <ol>
+        <ul>
             <li>
-                <a href="#background">Baackground</a>
+                <a href="#background">Background</a>
             </li>
             <li>
                 <a href="#height">Height</a>
@@ -150,7 +150,7 @@ NEED TO UPDATE
             <li>
                 <a href="#utilities">Utilities</a>
             </li>
-        </ol>
+        </ul>
 </details>
 
 #### Background
