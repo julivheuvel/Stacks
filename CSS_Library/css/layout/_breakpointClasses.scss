@@ -1,0 +1,97 @@
+
+.res-text {
+    @include none {
+        font-size: 1.25vh;
+    }
+    @include bp-200 {
+        font-size: 1.5vh;
+    }
+    @include bp-400 {
+        font-size: 2.25vh;
+    }
+    @include bp-800 {
+        font-size: 3.25vw;
+    }
+    @include bp-1000 {
+        font-size: 4.25vw;
+    }
+    @include bp-1200 {
+        font-size: 1vw;
+        }
+    @include bp-1600 {
+        font-size: 1vw;
+        }
+    @include bp-2000 {
+        font-size: 1vw;
+    }
+}
+
+.res-color {
+    @include none {
+        color: red;
+    }
+    @include bp-200 {
+        color: orange;
+    }
+    @include bp-400 {
+        color: yellow;
+    }
+    @include bp-800 {
+        color: green;
+    }
+    @include bp-1000 {
+        color: blue;
+    }
+    @include bp-1200 {
+        color: indigo;
+        }
+    @include bp-1600 {
+        color: purple;
+        }
+    @include bp-2000 {
+        color: #FF92C2;
+    }
+}
+
+.res-box {
+    @include none {
+        background-color: red;
+        width: 20px;
+        height: 20px;
+    }
+    @include bp-200 {
+        background-color: orange;
+        width: 40px;
+        height: 40px;
+    }
+    @include bp-400 {
+        background-color: yellow;
+        width: 80px;
+        height: 80px;
+    }
+    @include bp-800 {
+        background-color: green;
+        width: 120px;
+        height: 120px;
+    }
+    @include bp-1000 {
+        background-color: blue;
+        width: 160px;
+        height: 160px;
+    }
+    @include bp-1200 {
+        background-color: indigo;
+        width: 200px;
+        height: 200px;
+        }
+    @include bp-1600 {
+        background-color: purple;
+        width: 250px;
+        height: 250px;
+        }
+    @include bp-2000 {
+        background-color: #FF92C2;
+        width: 300px;
+        height: 300px;
+    }
+}

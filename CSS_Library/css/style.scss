@@ -1,6 +1,12 @@
 // contains colorMap
 @import "./utilities/colors";
 
+// contains breakpoint map and breakpoint mixins
+@import "./layout/breakpoints";
+@import "./layout/breakpointClasses";
+
 // uses colorMap
 @import "./utilities/background";
 @import "./utilities/text";
+
+

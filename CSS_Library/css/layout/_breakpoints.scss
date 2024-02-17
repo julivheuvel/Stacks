@@ -1,0 +1,51 @@
+$breakpoints : (
+    "0" : 0px,
+    "200" : 200px,
+    "400" : 400px,
+    "800" : 800px,
+    "1000" : 1000px,
+    "1200" : 1200px,
+    "1600" : 1600px,
+    "2000" : 2000px,
+);
+
+@mixin none {
+    @media (min-width: map-get($breakpoints, "0")) {
+        @content;
+    }
+}
+@mixin bp-200 {
+    @media (min-width: map-get($breakpoints, "200")) {
+        @content;
+    }
+}
+@mixin bp-400 {
+    @media (min-width: map-get($breakpoints, "400")) {
+        @content;
+    }
+}
+@mixin bp-800 {
+    @media (min-width: map-get($breakpoints, "800")) {
+        @content;
+    }
+}
+@mixin bp-1000 {
+    @media (min-width: map-get($breakpoints, "1000")) {
+        @content;
+    }
+}
+@mixin bp-1200 {
+    @media (min-width: map-get($breakpoints, "1200")) {
+        @content;
+    }
+}
+@mixin bp-1600 {
+    @media (min-width: map-get($breakpoints, "1600")) {
+        @content;
+    }
+}
+@mixin bp-2000 {
+    @media (min-width: map-get($breakpoints, "2000")) {
+        @content;
+    }
+}

@@ -1,3 +1,142 @@
+@media (min-width: 0px) {
+  .res-text {
+    font-size: 1.25vh;
+  }
+}
+@media (min-width: 200px) {
+  .res-text {
+    font-size: 1.5vh;
+  }
+}
+@media (min-width: 400px) {
+  .res-text {
+    font-size: 2.25vh;
+  }
+}
+@media (min-width: 800px) {
+  .res-text {
+    font-size: 3.25vw;
+  }
+}
+@media (min-width: 1000px) {
+  .res-text {
+    font-size: 4.25vw;
+  }
+}
+@media (min-width: 1200px) {
+  .res-text {
+    font-size: 1vw;
+  }
+}
+@media (min-width: 1600px) {
+  .res-text {
+    font-size: 1vw;
+  }
+}
+@media (min-width: 2000px) {
+  .res-text {
+    font-size: 1vw;
+  }
+}
+
+@media (min-width: 0px) {
+  .res-color {
+    color: red;
+  }
+}
+@media (min-width: 200px) {
+  .res-color {
+    color: orange;
+  }
+}
+@media (min-width: 400px) {
+  .res-color {
+    color: yellow;
+  }
+}
+@media (min-width: 800px) {
+  .res-color {
+    color: green;
+  }
+}
+@media (min-width: 1000px) {
+  .res-color {
+    color: blue;
+  }
+}
+@media (min-width: 1200px) {
+  .res-color {
+    color: indigo;
+  }
+}
+@media (min-width: 1600px) {
+  .res-color {
+    color: purple;
+  }
+}
+@media (min-width: 2000px) {
+  .res-color {
+    color: #FF92C2;
+  }
+}
+
+@media (min-width: 0px) {
+  .res-box {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (min-width: 200px) {
+  .res-box {
+    background-color: orange;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 400px) {
+  .res-box {
+    background-color: yellow;
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (min-width: 800px) {
+  .res-box {
+    background-color: green;
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (min-width: 1000px) {
+  .res-box {
+    background-color: blue;
+    width: 160px;
+    height: 160px;
+  }
+}
+@media (min-width: 1200px) {
+  .res-box {
+    background-color: indigo;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 1600px) {
+  .res-box {
+    background-color: purple;
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 2000px) {
+  .res-box {
+    background-color: #FF92C2;
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .bg-aqua {
   background-color: aqua;
 }
