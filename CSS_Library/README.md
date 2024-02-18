@@ -47,7 +47,7 @@
 <p align="right">(<a href="#css-library-powered-by-sass">back to top</a>)</p>
 
 
-<!-- Documentation -->
+<!-- !=========================== -->
 ## Documentation
 <details>
     <summary>Table of Contents</summary>
@@ -70,6 +70,8 @@
         </ol>
 </details>
 
+<!-- !=========================== -->
+<!-- !=========================== -->
 ### Base Styles
 <details>
     <summary>Contents</summary>
@@ -80,14 +82,21 @@
         </ul>
 </details>
 
+<details>
+
 #### Resets
 Resets borders and margins to 0. Sets box-sizing to border box
     typography settings
     global setings
 
+<p align="right">(<a href="#base-styles">back to base styles</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
+</details>
 
+
+<!-- !=========================== -->
+<!-- !=========================== -->
 ### Components
 
 <details>
@@ -216,12 +225,17 @@ Resets borders and margins to 0. Sets box-sizing to border box
 
 <p align="right">(<a href="#components">back to components</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
-
 </details>
 
-### Forms
-#### overview
 
+
+<!-- !=========================== -->
+<!-- !=========================== -->
+### Forms
+
+<details>
+
+#### overview
 
 <p align="right">(<a href="#forms">back to forms</a>)</p>
 
@@ -265,8 +279,10 @@ Resets borders and margins to 0. Sets box-sizing to border box
 
 <p align="right">(<a href="#forms">back to forms</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
+</details>
 
-
+<!-- !=========================== -->
+<!-- !=========================== -->
 ### Layout
 <details>
     <summary>Contents</summary>
@@ -288,6 +304,8 @@ Resets borders and margins to 0. Sets box-sizing to border box
             </li>
         </ul>
 </details>
+
+<details>
 
 #### Breakpoints
 Predefined breakpoints include:
@@ -329,8 +347,11 @@ Classes created include:
 
 <p align="right">(<a href="#layout">back to layout</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
+<details>
 
 
+<!-- !=========================== -->
+<!-- !=========================== -->
 ### Utilities
 <details>
     <summary>Contents</summary>
@@ -406,6 +427,7 @@ Classes created include:
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
 
+<details>
 
 #### Background
 Customize background with colors. All predefined css colors can be called with the class prefix `.bg-colorName`and can append tint or shade variation followed by degree of shade defined by 1-9 representing 10% intervals. Opacity of bg color can be defined on the base color by appending `-op-%` from 1%-99%
@@ -700,7 +722,7 @@ Text Wrap
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 <p align="right">(<a href="#css-library-powered-by-sass">back to top</a>)</p>
 
-
+</details>
 
 
 
