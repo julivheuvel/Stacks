@@ -99,6 +99,9 @@ Resets borders and margins to 0. Sets box-sizing to border box
         </ul>
 </details>
 
+
+<details>
+
 #### Accordion
 
 <p align="right">(<a href="#components">back to components</a>)</p>
@@ -214,19 +217,53 @@ Resets borders and margins to 0. Sets box-sizing to border box
 <p align="right">(<a href="#components">back to components</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
+</details>
 
 ### Forms
-    overview
-    form-control
-    select
-    checks & radios
-    range
-    input group
-    floating labels
-    layout
-    validation
+#### overview
 
 
+<p align="right">(<a href="#forms">back to forms</a>)</p>
+
+
+#### form-control
+
+<p align="right">(<a href="#forms">back to forms</a>)</p>
+
+
+#### select
+
+<p align="right">(<a href="#forms">back to forms</a>)</p>
+
+
+#### checks & radios
+
+<p align="right">(<a href="#forms">back to forms</a>)</p>
+
+
+#### range
+
+<p align="right">(<a href="#forms">back to forms</a>)</p>
+
+
+#### input group
+
+<p align="right">(<a href="#forms">back to forms</a>)</p>
+
+
+#### floating labels
+
+<p align="right">(<a href="#forms">back to forms</a>)</p>
+
+
+#### layout
+
+<p align="right">(<a href="#forms">back to forms</a>)</p>
+
+
+#### validation
+
+<p align="right">(<a href="#forms">back to forms</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
 
