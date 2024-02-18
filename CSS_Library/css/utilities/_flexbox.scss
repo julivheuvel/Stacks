@@ -1,0 +1,142 @@
+$flex:(
+    // ===========
+    // Display
+    // ===========
+    "display" : (
+        "prefix" : "d",
+        "values" : (
+            "flex" : flex,
+        ),
+    ),
+
+    // ===========
+    // Justify Content
+    // ===========
+    "justify-content" : (
+        "prefix" : "jc",
+        "values" : (
+            "start" : start,
+            "center" : center,
+            "end" : end,
+            "left" : left,
+            "right" : right,
+            "stretch" : stretch,
+            "flex-start" : flex-start,
+            "flex-end" : flex-end,
+            "between" : space-between,
+            "around" : space-around,
+            "evenly" : space-evenly,
+        ),
+    ),
+
+    // ===========
+    // Align Items
+    // ===========
+    "align-items" : (
+        "prefix" : "ai",
+        "values" : (
+            "stretch" : stretch,
+            "center" : center,
+            "start" : start,
+            "end" : end,
+            "flex-end" : flex-end,
+            "flex-start" : flex-start,
+        ),
+    ),
+
+    // ===========
+    // Align Content
+    // ===========
+
+
+    // ===========
+    // Flex-Wrap
+    // ===========
+    "flex-wrap" : (
+        "prefix" : "fw",
+        "values" : (
+            "wrap" : wrap,
+            "nowrap" : nowrap
+            "reverse" : wrap-reverse
+        ),
+    ),
+
+    
+    // ===========
+    // Flex-Flow
+    // ===========
+    "flex-flow" : (
+        "prefix" : "ff",
+        "values" : (
+            "r" : row,
+            "rr" : row-reverse,
+            "c" : column,
+            "cr" : column-reverse,
+            "rw" : row wrap,
+            "rw" : row wrap-reverse,
+            "rrw" : row-reverse wrap,
+            "rrw" : row-reverse wrap-reverse,
+            "rnw" : row nowrap,
+            "rrnw" : row-reverse nowrap,
+            "cw" : column wrap,
+            "cw" : column wrap-reverse,
+            "crw" : column-reverse wrap,
+            "crw" : column-reverse wrap-reverse,
+            "cnw" : column nowrap,
+            "crnw" : column-reverse nowrap,
+        ),
+    ),
+
+    // ===========
+    // Gap
+    // ===========
+    "gap" : (
+        "prefix" : "g",
+        "values" : (
+            "0" : 0,
+            "0.25" : 0.525m,
+            "0.5" : 0.5em,
+            "0.75" : 0.75em,
+            "1" : 1em,
+            "1.5" : 1.5em,
+            "2" : 2em,
+            "2.5" : 2.5em,
+            "3" : 3em,
+            "3.5" : 3.5em,
+            "4" : 4em,
+            "4.5" : 4.5em,
+            "5" : 5em,
+            "5.5" : 5.5em,
+            "6" : 6em,
+            "6.5" : 6.5em,
+            "7" : 7em,
+            "7.5" : 7.5em,
+            "8" : 8em,
+            "8.5" : 8.5em,
+            "9" : 9em,
+            "9.5" : 9.5em,
+            "10" : 10em,
+        ),
+    ),
+
+    "flex-direction" : (
+        "prefix" : "fd",
+        "values" : (
+            "row" : row,
+            "row-reverse" : row-reverse,
+            "column" : column,
+            "column-reverse" : column-reverse,
+        ),
+    ),
+);
+
+@each $property, $map in $flex {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $key, $val in $values {
+        .#{$prefix}-#{$key} {
+            #{$property} : $val;
+        }
+    }
+}

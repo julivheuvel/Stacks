@@ -1,0 +1,25 @@
+$display:(
+// ===========
+    // Display
+    // ===========
+    "display" : (
+        "prefix" : "d",
+        "values" : (
+            "none" : none,
+            "block" : block,
+            "inline" : inline,
+            "ib" : inline-block,
+        ),
+    ),
+);
+
+@each $property, $map in $display {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $key, $val in $values {
+        .#{$prefix}-#{$key} {
+            #{$property} : $val;
+        }
+    }
+}
