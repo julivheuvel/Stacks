@@ -232,13 +232,25 @@ Resets borders and margins to 0. Sets box-sizing to border box
 <!-- !=========================== -->
 <!-- !=========================== -->
 ### Forms
+<details>
+    <summary>Contents</summary>
+        <ul>
+            <li>
+                <a href="#form-control">form control</a>
+            </li>
+            <li>
+                <a href="#select">select</a>
+            </li>
+            <li>
+                <a href="#checks-&-radios">checks & radios</a>
+            </li>
+            <li>
+                <a href="#rainge">range</a>
+            </li>
+        </ul>
+</details>
 
 <details>
-
-#### overview
-
-<p align="right">(<a href="#forms">back to forms</a>)</p>
-
 
 #### form-control
 
@@ -266,11 +278,6 @@ Resets borders and margins to 0. Sets box-sizing to border box
 
 
 #### floating labels
-
-<p align="right">(<a href="#forms">back to forms</a>)</p>
-
-
-#### layout
 
 <p align="right">(<a href="#forms">back to forms</a>)</p>
 
