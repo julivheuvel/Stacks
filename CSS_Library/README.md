@@ -73,16 +73,12 @@
 <!-- !=========================== -->
 <!-- !=========================== -->
 ### Base Styles
-<details>
-    <summary>Contents</summary>
-        <ul>
-            <li>
-                <a href="#resets">Resets</a>
-            </li>
-        </ul>
-</details>
-
-<details>
+<summary>Contents</summary>
+    <ul>
+        <li>
+            <a href="#resets">Resets</a>
+        </li>
+    </ul>
 
 #### Resets
 Resets borders and margins to 0. Sets box-sizing to border box
@@ -92,25 +88,17 @@ Resets borders and margins to 0. Sets box-sizing to border box
 <p align="right">(<a href="#base-styles">back to base styles</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
-</details>
-
 
 <!-- !=========================== -->
 <!-- !=========================== -->
 ### Components
-
-<details>
-    <summary>Contents</summary>
-        <ul>
-            <li>
-                <a href="#accordian">Accordian</a>
-            </li>
-        </ul>
-</details>
-
-
-<details>
-
+<summary>Contents</summary>
+    <ul>
+        <li>
+            <a href="#accordian">Accordian</a>
+        </li>
+    </ul>
+    
 #### Accordion
 
 <p align="right">(<a href="#components">back to components</a>)</p>
@@ -225,32 +213,29 @@ Resets borders and margins to 0. Sets box-sizing to border box
 
 <p align="right">(<a href="#components">back to components</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
-</details>
+
 
 
 
 <!-- !=========================== -->
 <!-- !=========================== -->
 ### Forms
-<details>
-    <summary>Contents</summary>
-        <ul>
-            <li>
-                <a href="#form-control">form control</a>
-            </li>
-            <li>
-                <a href="#select">select</a>
-            </li>
-            <li>
-                <a href="#checks-&-radios">checks & radios</a>
-            </li>
-            <li>
-                <a href="#rainge">range</a>
-            </li>
-        </ul>
-</details>
+<summary>Contents</summary>
+    <ul>
+        <li>
+            <a href="#form-control">form control</a>
+        </li>
+        <li>
+            <a href="#select">select</a>
+        </li>
+        <li>
+            <a href="#checks-&-radios">checks & radios</a>
+        </li>
+        <li>
+            <a href="#rainge">range</a>
+        </li>
+    </ul>
 
-<details>
 
 #### form-control
 
@@ -286,33 +271,30 @@ Resets borders and margins to 0. Sets box-sizing to border box
 
 <p align="right">(<a href="#forms">back to forms</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
-</details>
+
 
 <!-- !=========================== -->
 <!-- !=========================== -->
 ### Layout
-<details>
-    <summary>Contents</summary>
-        <ul>
-            <li>
-                <a href="#breakpoints">Breakpoints</a>
-            </li>
-            <li>
-                <a href="#containers">Containers</a>
-            </li>
-            <li>
-                <a href="#grid">Grid</a>
-            </li>
-            <li>
-                <a href="#columns">Columns</a>
-            </li>
-            <li>
-                <a href="#gutters">Gutters</a>
-            </li>
-        </ul>
-</details>
+<summary>Contents</summary>
+    <ul>
+        <li>
+            <a href="#breakpoints">Breakpoints</a>
+        </li>
+        <li>
+            <a href="#containers">Containers</a>
+        </li>
+        <li>
+            <a href="#grid">Grid</a>
+        </li>
+        <li>
+            <a href="#columns">Columns</a>
+        </li>
+        <li>
+            <a href="#gutters">Gutters</a>
+        </li>
+    </ul>
 
-<details>
 
 #### Breakpoints
 Predefined breakpoints include:
@@ -354,87 +336,82 @@ Classes created include:
 
 <p align="right">(<a href="#layout">back to layout</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
-</details>
+
 
 
 <!-- !=========================== -->
 <!-- !=========================== -->
 ### Utilities
-<details>
-    <summary>Contents</summary>
-        <ul>
-            <li>
-                <a href="#background">Background</a>
-            </li>
-            <li>
-                <a href="#borders">Borders</a>
-            </li>
-            <li>
-                <a href="#colors">Colors</a>
-            </li>
-            <li>
-                <a href="#display">Display</a>
-            </li>
-            <li>
-                <a href="#flex">Flex</a>
-            </li>
-            <li>
-                <a href="#float">Float</a>
-            </li>
-            <li>
-                <a href="#height">Height</a>
-            </li>
-            <li>
-                <a href="#interactions">Interactions</a>
-            </li>
-            <li>
-                <a href="#link">Link</a>
-            </li>
-            <li>
-                <a href="#object-fit">Object-fit</a>
-            </li>
-            <li>
-                <a href="#opacity">Opacity</a>
-            </li>
-            <li>
-                <a href="#Overflow">Overflow</a>
-            </li>
-            <li>
-                <a href="#Position">Position</a>
-            </li>
-            <li>
-                <a href="#Shadows">Shadows</a>
-            </li>
-            <li>
-                <a href="#Sizing">Sizing</a>
-            </li>
-            <li>
-                <a href="#Spacing">Spacing</a>
-            </li>
-            <li>
-                <a href="#Tables">Tables</a>
-            </li>
-            <li>
-                <a href="#text">Text</a>
-            </li>
-            <li>
-                <a href="#Vertical-align">Vertical align</a>
-            </li>
-            <li>
-                <a href="#Visibility">Visibility</a>
-            </li>
-            <li>
-                <a href="#width">Width</a>
-            </li>
-            <li>
-                <a href="#Z-Index">Z-Index</a>
-            </li>
-        </ul>
-</details>
+<summary>Contents</summary>
+    <ul>
+        <li>
+            <a href="#background">Background</a>
+        </li>
+        <li>
+            <a href="#borders">Borders</a>
+        </li>
+        <li>
+            <a href="#colors">Colors</a>
+        </li>
+        <li>
+            <a href="#display">Display</a>
+        </li>
+        <li>
+            <a href="#flex">Flex</a>
+        </li>
+        <li>
+            <a href="#float">Float</a>
+        </li>
+        <li>
+            <a href="#height">Height</a>
+        </li>
+        <li>
+            <a href="#interactions">Interactions</a>
+        </li>
+        <li>
+            <a href="#link">Link</a>
+        </li>
+        <li>
+            <a href="#object-fit">Object-fit</a>
+        </li>
+        <li>
+            <a href="#opacity">Opacity</a>
+        </li>
+        <li>
+            <a href="#Overflow">Overflow</a>
+        </li>
+        <li>
+            <a href="#Position">Position</a>
+        </li>
+        <li>
+            <a href="#Shadows">Shadows</a>
+        </li>
+        <li>
+            <a href="#Sizing">Sizing</a>
+        </li>
+        <li>
+            <a href="#Spacing">Spacing</a>
+        </li>
+        <li>
+            <a href="#Tables">Tables</a>
+        </li>
+        <li>
+            <a href="#text">Text</a>
+        </li>
+        <li>
+            <a href="#Vertical-align">Vertical align</a>
+        </li>
+        <li>
+            <a href="#Visibility">Visibility</a>
+        </li>
+        <li>
+            <a href="#width">Width</a>
+        </li>
+        <li>
+            <a href="#Z-Index">Z-Index</a>
+        </li>
+    </ul>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
-
-
-<details>
 
 #### Background
 Customize background with colors. All predefined css colors can be called with the class prefix `.bg-colorName`and can append tint or shade variation followed by degree of shade defined by 1-9 representing 10% intervals. Opacity of bg color can be defined on the base color by appending `-op-%` from 1%-99%
@@ -729,7 +706,6 @@ Text Wrap
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 <p align="right">(<a href="#css-library-powered-by-sass">back to top</a>)</p>
 
-</details>
 
 
 
