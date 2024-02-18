@@ -411,51 +411,128 @@ Classes created for flexbox properties
 | :------------: | :-------------: |
 | display flex   | .d-flex         |
 
-<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+<p align="right">(<a href="#flex">back to flex</a>)</p>
 
 
 ##### Justify Content
-| behavior       |  class name     | 
-| :------------: | :-------------: |
-| justify-content start   | .jc-start         |
-| justify-content center   | .jc-center         |
-| justify-content end   | .jc-end         |
-| justify-content left   | .jc-left         |
-| justify-content right   | .jc-right         |
-| justify-content stretch   | .jc-stretch         |
-| justify-content flex-start   | .jc-flex-start         |
-| justify-content flex-end   | .jc-flex-end         |
-| justify-content space-between   | .jc-space-between         |
-| justify-content space-around   | .jc-space-around         |
-| justify-content space-evenly   | .jc-space-evenly         |
+| behavior                      |  class name       | 
+| :---------------------------: | :---------------: |
+| justify-content start         | .jc-start         |
+| justify-content center        | .jc-center        |
+| justify-content end           | .jc-end           |
+| justify-content left          | .jc-left          |
+| justify-content right         | .jc-right         |
+| justify-content stretch       | .jc-stretch       |
+| justify-content flex-start    | .jc-f-start    |
+| justify-content flex-end      | .jc-f-end      |
+| justify-content space-between | .jc-between |
+| justify-content space-around  | .jc-around  |
+| justify-content space-evenly  | .jc-evenly  |
 
-<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+<p align="right">(<a href="#flex">back to flex</a>)</p>
 
 
 ##### Align Items
+| behavior               |  class name    | 
+| :--------------------: | :------------: |
+| align-items normal     | .ai-normal     |
+| align-items stretch    | .ai-stretch    |
+| align-items center     | .ai-center     |
+| align-items baseline   | .ai-baseline   |
+| align-items start      | .ai-start      |
+| align-items end        | .ai-end        |
+| align-items flex-end   | .ai-f-end   |
+| align-items flex-start | .ai-f-start |
 
-<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+<p align="right">(<a href="#flex">back to flex</a>)</p>
 
 
 ##### Align Content
+| behavior                    |  class name | 
+| :-------------------------: | :---------: |
+| align-content stretch       | .ac-stretch |
+| align-content center        | .ac-center  |
+| align-content flex-start    | .ac-f-start |
+| align-content flex-end      | .ac-f-end   |
+| align-content space-between | .ac-between |
+| align-content space-around  | .ac-around  |
+| align-content space-evenly  | .ac-evenly  |
 
-<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+<p align="right">(<a href="#flex">back to flex</a>)</p>
 
 
 ##### Flex Wrap
+| behavior               |  class name | 
+| :--------------------: | :---------: |
+| flex-wrap wrap         | .fw-wrap    |
+| flex-wrap nowrap       | .fw-nowrap  |
+| flex-wrap wrap-reverse | .fw-reverse |
 
-<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+<p align="right">(<a href="#flex">back to flex</a>)</p>
 
 
 ##### Flex Flow
+| behavior                              |  class name | 
+| :-----------------------------------: | :---------: |
+| flex-flow row                         | .fw-r    |
+| flex-flow row-reverse                 | .fw-rr   |
+| flex-flow column                      | .fw-c    |
+| flex-flow column-reverse              | .fw-cr   |
+| flex-flow row wrap                    | .fw-rw   |
+| flex-flow row wrap-reverse            | .fw-rwr  |
+| flex-flow row-reverse wrap            | .fw-rrwr |
+| flex-flow row-reverse wrap-reverse    | .fw-rrwr |
+| flex-flow row nowrap                  | .fw-rnw  |
+| flex-flow row-reverse nowrap          | .fw-rrnw |
+| flex-flow column wrap                 | .fw-cw   |
+| flex-flow column wrap-reverse         | .fw-cwr  |
+| flex-flow column-reverse wrap         | .fw-crwr |
+| flex-flow column-reverse wrap-reverse | .fw-crwr |
+| flex-flow column nowrap               | .fw-cnw  |
+| flex-flow column-reverse nowrap       | .fw-crnw |
 
-<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+<p align="right">(<a href="#flex">back to flex</a>)</p>
 
 
 ##### Gap
+| behavior  |  class name | 
+| :-------: | :---------: |
+| gap 0     | .g-0   |
+| gap .25em | .g-p25 |
+| gap .5em  | .g-p5  |
+| gap .75em | .g-p75 |
+| gap .1em  | .g-1   |
+| gap 1.5em | .g-1p5 |
+| gap 2em   | .g-2   |
+| gap 2.5em | .g-2p5 |
+| gap 3em   | .g-3   |
+| gap 3.5em | .g-3p5 |
+| gap 4em   | .g-4   |
+| gap 4.5em | .g-4p5 |
+| gap 5em   | .g-5   |
+| gap 5.5em | .g-5p5 |
+| gap 6em   | .g-6   |
+| gap 6.5em | .g-6p5 |
+| gap 7em   | .g-7   |
+| gap 7.5em | .g-7p5 |
+| gap 8em   | .g-8   |
+| gap 8.5em | .g-8p5 |
+| gap 9em   | .g-9   |
+| gap 9.5em | .g-9p5 |
+| gap 10em  | .g-10  |
 
+<p align="right">(<a href="#flex">back to flex</a>)</p>
 
-<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+##### Flex Direction
+| behavior  |  class name | 
+| :-------: | :---------: |
+| flex-direction row    | .fd-row |
+| flex-direction row-reverse    | .fd-row-reverse |
+| flex-direction column    | .fd-col |
+| flex-direction column-reverse    | .fd-col-reverse |
+
+<p align="right">(<a href="#flex">back to flex</a>)</p>
 <p align="right">(<a href="#utilities">back to utilities</a>)</p>
 
 

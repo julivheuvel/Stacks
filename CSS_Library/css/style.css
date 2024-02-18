@@ -193187,4 +193187,320 @@
 
 .vw-200-min {
   min-width: 200vw;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-ib {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.jc-start {
+  justify-content: start;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-end {
+  justify-content: end;
+}
+
+.jc-left {
+  justify-content: left;
+}
+
+.jc-right {
+  justify-content: right;
+}
+
+.jc-stretch {
+  justify-content: stretch;
+}
+
+.jc-f-start {
+  justify-content: flex-start;
+}
+
+.jc-f-end {
+  justify-content: flex-end;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-around {
+  justify-content: space-around;
+}
+
+.jc-evenly {
+  justify-content: space-evenly;
+}
+
+.ai-normal {
+  align-items: normal;
+}
+
+.ai-stretch {
+  align-items: stretch;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-baseline {
+  align-items: baseline;
+}
+
+.ai-f-start {
+  align-items: flex-start;
+}
+
+.ai-f-end {
+  align-items: flex-end;
+}
+
+.ai-start {
+  align-items: start;
+}
+
+.ai-end {
+  align-items: end;
+}
+
+.ai-flex-end {
+  align-items: flex-end;
+}
+
+.ai-flex-start {
+  align-items: flex-start;
+}
+
+.ac-stretch {
+  align-content: stretch;
+}
+
+.ac-center {
+  align-content: center;
+}
+
+.ac-f-start {
+  align-content: flex-start;
+}
+
+.ac-f-end {
+  align-content: flex-end;
+}
+
+.ac-between {
+  align-content: space-between;
+}
+
+.ac-around {
+  align-content: space-around;
+}
+
+.ac-evenly {
+  align-content: space-evenly;
+}
+
+.fw-wrap {
+  flex-wrap: wrap;
+}
+
+.fw-nowrap {
+  flex-wrap: nowrap;
+}
+
+.fw-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.ff-r {
+  flex-flow: row;
+}
+
+.ff-rr {
+  flex-flow: row-reverse;
+}
+
+.ff-c {
+  flex-flow: column;
+}
+
+.ff-cr {
+  flex-flow: column-reverse;
+}
+
+.ff-rw {
+  flex-flow: row wrap;
+}
+
+.ff-rwr {
+  flex-flow: row wrap-reverse;
+}
+
+.ff-rrw {
+  flex-flow: row-reverse wrap;
+}
+
+.ff-rrwr {
+  flex-flow: row-reverse wrap-reverse;
+}
+
+.ff-rnw {
+  flex-flow: row nowrap;
+}
+
+.ff-rrnw {
+  flex-flow: row-reverse nowrap;
+}
+
+.ff-cw {
+  flex-flow: column wrap;
+}
+
+.ff-cwr {
+  flex-flow: column wrap-reverse;
+}
+
+.ff-crw {
+  flex-flow: column-reverse wrap;
+}
+
+.ff-crwr {
+  flex-flow: column-reverse wrap-reverse;
+}
+
+.ff-cnw {
+  flex-flow: column nowrap;
+}
+
+.ff-crnw {
+  flex-flow: column-reverse nowrap;
+}
+
+.g-0 {
+  gap: 0;
+}
+
+.g-p25 {
+  gap: 0.25em;
+}
+
+.g-p5 {
+  gap: 0.5em;
+}
+
+.g-p75 {
+  gap: 0.75em;
+}
+
+.g-1 {
+  gap: 1em;
+}
+
+.g-1p5 {
+  gap: 1.5em;
+}
+
+.g-2 {
+  gap: 2em;
+}
+
+.g-2p5 {
+  gap: 2.5em;
+}
+
+.g-3 {
+  gap: 3em;
+}
+
+.g-3p5 {
+  gap: 3.5em;
+}
+
+.g-4 {
+  gap: 4em;
+}
+
+.g-4p5 {
+  gap: 4.5em;
+}
+
+.g-5 {
+  gap: 5em;
+}
+
+.g-5p5 {
+  gap: 5.5em;
+}
+
+.g-6 {
+  gap: 6em;
+}
+
+.g-6p5 {
+  gap: 6.5em;
+}
+
+.g-7 {
+  gap: 7em;
+}
+
+.g-7p5 {
+  gap: 7.5em;
+}
+
+.g-8 {
+  gap: 8em;
+}
+
+.g-8p5 {
+  gap: 8.5em;
+}
+
+.g-9 {
+  gap: 9em;
+}
+
+.g-9p5 {
+  gap: 9.5em;
+}
+
+.g-10 {
+  gap: 10em;
+}
+
+.fd-row {
+  flex-direction: row;
+}
+
+.fd-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.fd-col {
+  flex-direction: column;
+}
+
+.fd-col-reverse {
+  flex-direction: column-reverse;
 }/*# sourceMappingURL=style.css.map */

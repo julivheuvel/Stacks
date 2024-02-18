@@ -21,8 +21,8 @@ $flex:(
             "left" : left,
             "right" : right,
             "stretch" : stretch,
-            "flex-start" : flex-start,
-            "flex-end" : flex-end,
+            "f-start" : flex-start,
+            "f-end" : flex-end,
             "between" : space-between,
             "around" : space-around,
             "evenly" : space-evenly,
@@ -35,8 +35,12 @@ $flex:(
     "align-items" : (
         "prefix" : "ai",
         "values" : (
+            "normal" : normal,
             "stretch" : stretch,
             "center" : center,
+            "baseline" : baseline,
+            "f-start" : flex-start,
+            "f-end" : flex-end,
             "start" : start,
             "end" : end,
             "flex-end" : flex-end,
@@ -47,7 +51,18 @@ $flex:(
     // ===========
     // Align Content
     // ===========
-
+    "align-content" : (
+        "prefix" : "ac",
+        "values" : (
+            "stretch" : stretch,
+            "center" : center,
+            "f-start" : flex-start,
+            "f-end" : flex-end,
+            "between" : space-between,
+            "around" : space-around,
+            "evenly" : space-evenly,
+        ),
+    ),
 
     // ===========
     // Flex-Wrap
@@ -56,8 +71,8 @@ $flex:(
         "prefix" : "fw",
         "values" : (
             "wrap" : wrap,
-            "nowrap" : nowrap
-            "reverse" : wrap-reverse
+            "nowrap" : nowrap,
+            "reverse" : wrap-reverse,
         ),
     ),
 
@@ -73,15 +88,15 @@ $flex:(
             "c" : column,
             "cr" : column-reverse,
             "rw" : row wrap,
-            "rw" : row wrap-reverse,
+            "rwr" : row wrap-reverse,
             "rrw" : row-reverse wrap,
-            "rrw" : row-reverse wrap-reverse,
+            "rrwr" : row-reverse wrap-reverse,
             "rnw" : row nowrap,
             "rrnw" : row-reverse nowrap,
             "cw" : column wrap,
-            "cw" : column wrap-reverse,
+            "cwr" : column wrap-reverse,
             "crw" : column-reverse wrap,
-            "crw" : column-reverse wrap-reverse,
+            "crwr" : column-reverse wrap-reverse,
             "cnw" : column nowrap,
             "crnw" : column-reverse nowrap,
         ),
@@ -94,27 +109,27 @@ $flex:(
         "prefix" : "g",
         "values" : (
             "0" : 0,
-            "0.25" : 0.525m,
-            "0.5" : 0.5em,
-            "0.75" : 0.75em,
+            "p25" : 0.25em,
+            "p5" : 0.5em,
+            "p75" : 0.75em,
             "1" : 1em,
-            "1.5" : 1.5em,
+            "1p5" : 1.5em,
             "2" : 2em,
-            "2.5" : 2.5em,
+            "2p5" : 2.5em,
             "3" : 3em,
-            "3.5" : 3.5em,
+            "3p5" : 3.5em,
             "4" : 4em,
-            "4.5" : 4.5em,
+            "4p5" : 4.5em,
             "5" : 5em,
-            "5.5" : 5.5em,
+            "5p5" : 5.5em,
             "6" : 6em,
-            "6.5" : 6.5em,
+            "6p5" : 6.5em,
             "7" : 7em,
-            "7.5" : 7.5em,
+            "7p5" : 7.5em,
             "8" : 8em,
-            "8.5" : 8.5em,
+            "8p5" : 8.5em,
             "9" : 9em,
-            "9.5" : 9.5em,
+            "9p5" : 9.5em,
             "10" : 10em,
         ),
     ),
@@ -124,8 +139,8 @@ $flex:(
         "values" : (
             "row" : row,
             "row-reverse" : row-reverse,
-            "column" : column,
-            "column-reverse" : column-reverse,
+            "col" : column,
+            "col-reverse" : column-reverse,
         ),
     ),
 );
