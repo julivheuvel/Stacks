@@ -101,29 +101,117 @@ Resets borders and margins to 0. Sets box-sizing to border box
 
 #### Accordion
 
-    alerts
-    badge
-    breadcrumb
-    buttons
-    button-group
-    card
-    carousel
-    close button
-    collapse
-    dropdowns
-    list group
-    modal
-    navbar
-    navs, tabs
-    offcanvas
-    pagination
-    placeholders
-    popovers
-    progress
-    srcollspy
-    spinners
-    toasts
+<p align="right">(<a href="#components">back to components</a>)</p>
 
+#### alerts
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### badge
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### breadcrumb
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### buttons
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### button-group
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### card
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### carousel
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### close button
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### collapse
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### dropdowns
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### list group
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### modal
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### navbar
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### navs, tabs
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### offcanvas
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### pagination
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### placeholders
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### popovers
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### progress
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### srcollspy
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### spinners
+
+<p align="right">(<a href="#components">back to components</a>)</p>
+
+
+#### toasts
+
+
+<p align="right">(<a href="#components">back to components</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
 
@@ -137,6 +225,7 @@ Resets borders and margins to 0. Sets box-sizing to border box
     floating labels
     layout
     validation
+
 
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
@@ -180,12 +269,28 @@ Classes created include:
 | :--------: | :-------: |
 | .re-text   | font size |
 
+<p align="right">(<a href="#layout">back to layout</a>)</p>
+
 
 #### Containers
+
+<p align="right">(<a href="#layout">back to layout</a>)</p>
+
+
 #### Grid
+
+<p align="right">(<a href="#layout">back to layout</a>)</p>
+
+
 #### Columns
+
+<p align="right">(<a href="#layout">back to layout</a>)</p>
+
+
 #### Gutters
 
+
+<p align="right">(<a href="#layout">back to layout</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
 
@@ -261,6 +366,7 @@ Classes created include:
             </li>
         </ul>
 </details>
+<p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
 
 
@@ -274,14 +380,89 @@ Customize background with colors. All predefined css colors can be called with t
 | tinted colors | .bg-{colorName}-light-{#} |
 | shaded colors | .bg-{colorName}-dark-{#}  |
 
-<p align="right">(<a href="#documentation">back to documentation</a>)</p>
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
 
 
 #### Borders
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Colors
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Display
+Basic display definitions
+
+| behavior       |  class name     | 
+| :------------: | :-------------: |
+| display none   | .d-none         |
+| display block  | .d-block        |
+| display inline | .d-inline       |
+| display ib     | .d-inline-block |
+
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Flex
+Classes created for flexbox properties
+
+| behavior       |  class name     | 
+| :------------: | :-------------: |
+| display flex   | .d-flex         |
+
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
+##### Justify Content
+| behavior       |  class name     | 
+| :------------: | :-------------: |
+| justify-content start   | .jc-start         |
+| justify-content center   | .jc-center         |
+| justify-content end   | .jc-end         |
+| justify-content left   | .jc-left         |
+| justify-content right   | .jc-right         |
+| justify-content stretch   | .jc-stretch         |
+| justify-content flex-start   | .jc-flex-start         |
+| justify-content flex-end   | .jc-flex-end         |
+| justify-content space-between   | .jc-space-between         |
+| justify-content space-around   | .jc-space-around         |
+| justify-content space-evenly   | .jc-space-evenly         |
+
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
+##### Align Items
+
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
+##### Align Content
+
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
+##### Flex Wrap
+
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
+##### Flex Flow
+
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
+##### Gap
+
+
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Float
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 
 #### Height
 Customizing with height can be defined by either `.h` or `.vh` and appended by a value ranging from 1 through 200. Default unit for `.h` will be in % unless otherwise defined directly after value, i.e. `.h-10px`
@@ -298,18 +479,49 @@ Customizing with height can be defined by either `.h` or `.vh` and appended by a
 | vh base max           | .vh-{value}-max       |
 | vh base min           | .vh-{value}-min       |
 
-<p align="right">(<a href="#documentation">back to documentation</a>)</p>
+
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
 
 #### Interations
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Link
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Object-fit
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Opacity
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Overflow
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Position
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Shadows
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Sizing
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Spacing
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Tables
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 
 #### Width
 Customizing with width can be defined by either `.w` or `.vw` and appended by a value ranging from 1 through 200. Default unit for `.w` will be in % unless otherwise defined directly after value, i.e. `.w-10px`
@@ -326,7 +538,8 @@ Customizing with width can be defined by either `.w` or `.vw` and appended by a 
 | vw base max           | .vw-{value}-max       |
 | vw base min           | .vw-{value}-min       |
 
-<p align="right">(<a href="#documentation">back to documentation</a>)</p>
+
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
 
 #### Text
 Customize text with colors. All predefined css colors can be called with the class prefix `.t-colorName`and can append tint or shade variation followed by degree of shade defined by 1-9 representing 10% intervals. Opacity of text color can be defined on the base color by appending `-op-%` from 1%-99%
@@ -355,14 +568,22 @@ Text Wrap
 | pretty   | .t-wrap-pretty  |
 | stable   | .t-wrap-stable  |
 
-<p align="right">(<a href="#documentation">back to documentation</a>)</p>
+
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
 
 #### Vertical align
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Visibility
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
 #### Z-Index
 
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
-
 <p align="right">(<a href="#css-library-powered-by-sass">back to top</a>)</p>
 
 
