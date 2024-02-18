@@ -79,6 +79,7 @@
             </li>
         </ul>
 </details>
+
 #### Resets
 Resets borders and margins to 0. Sets box-sizing to border box
     typography settings
@@ -88,7 +89,18 @@ Resets borders and margins to 0. Sets box-sizing to border box
 
 
 ### Components
-    accordion
+
+<details>
+    <summary>Contents</summary>
+        <ul>
+            <li>
+                <a href="#accordian">Accordian</a>
+            </li>
+        </ul>
+</details>
+
+#### Accordion
+
     alerts
     badge
     breadcrumb
@@ -130,12 +142,49 @@ Resets borders and margins to 0. Sets box-sizing to border box
 
 
 ### Layout
-breakpoints
-NEED TO UPDATE
-    containers
-    grid
-    columns
-    gutters
+<details>
+    <summary>Contents</summary>
+        <ul>
+            <li>
+                <a href="#breakpoints">Breakpoints</a>
+            </li>
+            <li>
+                <a href="#containers">Containers</a>
+            </li>
+            <li>
+                <a href="#grid">Grid</a>
+            </li>
+            <li>
+                <a href="#columns">Columns</a>
+            </li>
+            <li>
+                <a href="#gutters">Gutters</a>
+            </li>
+        </ul>
+</details>
+
+#### Breakpoints
+Predefined breakpoints include:
+    <ul>
+        <li>0</li>
+        <li>200</li>
+        <li>400</li>
+        <li>800</li>
+        <li>1000</li>
+        <li>1200</li>
+        <li>1600</li>
+        <li>2000</li>
+    </ul>
+Classes created include:
+| class name |  behavior | 
+| :--------: | :-------: |
+| .re-text   | font size |
+
+
+#### Containers
+#### Grid
+#### Columns
+#### Gutters
 
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
 
@@ -148,19 +197,72 @@ NEED TO UPDATE
                 <a href="#background">Background</a>
             </li>
             <li>
+                <a href="#borders">Borders</a>
+            </li>
+            <li>
+                <a href="#colors">Colors</a>
+            </li>
+            <li>
+                <a href="#display">Display</a>
+            </li>
+            <li>
+                <a href="#flex">Flex</a>
+            </li>
+            <li>
+                <a href="#float">Float</a>
+            </li>
+            <li>
                 <a href="#height">Height</a>
             </li>
             <li>
-                <a href="#width">Width</a>
+                <a href="#interactions">Interactions</a>
+            </li>
+            <li>
+                <a href="#link">Link</a>
+            </li>
+            <li>
+                <a href="#object-fit">Object-fit</a>
+            </li>
+            <li>
+                <a href="#opacity">Opacity</a>
+            </li>
+            <li>
+                <a href="#Overflow">Overflow</a>
+            </li>
+            <li>
+                <a href="#Position">Position</a>
+            </li>
+            <li>
+                <a href="#Shadows">Shadows</a>
+            </li>
+            <li>
+                <a href="#Sizing">Sizing</a>
+            </li>
+            <li>
+                <a href="#Spacing">Spacing</a>
+            </li>
+            <li>
+                <a href="#Tables">Tables</a>
             </li>
             <li>
                 <a href="#text">Text</a>
             </li>
             <li>
-                <a href="#utilities">Utilities</a>
+                <a href="#Vertical-align">Vertical align</a>
+            </li>
+            <li>
+                <a href="#Visibility">Visibility</a>
+            </li>
+            <li>
+                <a href="#width">Width</a>
+            </li>
+            <li>
+                <a href="#Z-Index">Z-Index</a>
             </li>
         </ul>
 </details>
+
+
 
 #### Background
 Customize background with colors. All predefined css colors can be called with the class prefix `.bg-colorName`and can append tint or shade variation followed by degree of shade defined by 1-9 representing 10% intervals. Opacity of bg color can be defined on the base color by appending `-op-%` from 1%-99%
