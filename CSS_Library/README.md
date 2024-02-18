@@ -347,7 +347,7 @@ Classes created include:
 
 <p align="right">(<a href="#layout">back to layout</a>)</p>
 <p align="right">(<a href="#documentation">back to documentation</a>)</p>
-<details>
+</details>
 
 
 <!-- !=========================== -->
