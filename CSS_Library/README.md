@@ -71,7 +71,8 @@
 </details>
 
 ### Base Styles
-    resets
+#### Resets
+Resets borders and margins to 0. Sets box-sizing to border box
     typography settings
     global setings
 
@@ -270,6 +271,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 Juli Vanden Heuvel - [email](juli.heuvel@gmail.com)
+
 Project Link: [Library](https://github.com/julivheuvel/Stacks/tree/main/Java_Jingles)
 
 <p align="right">(<a href="#css-library-powered-by-sass">back to top</a>)</p>
