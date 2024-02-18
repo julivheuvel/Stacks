@@ -71,6 +71,14 @@
 </details>
 
 ### Base Styles
+<details>
+    <summary>Contents</summary>
+        <ul>
+            <li>
+                <a href="#resets">Resets</a>
+            </li>
+        </ul>
+</details>
 #### Resets
 Resets borders and margins to 0. Sets box-sizing to border box
     typography settings
