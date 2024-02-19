@@ -372,6 +372,9 @@ Classes created include:
             <a href="#link">Link</a>
         </li>
         <li>
+            <a href="#margin">Margin</a>
+        </li>
+        <li>
             <a href="#object-fit">Object-fit</a>
         </li>
         <li>
@@ -607,6 +610,10 @@ Customizing with height can be defined by either `.h` or `.vh` and appended by a
 
 
 #### Link
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+
+#### Margin
 <p align="right">(<a href="#utilities">back to utilities</a>)</p>
 
 
