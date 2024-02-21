@@ -28,13 +28,6 @@
         .m-#{$i}-#{$j}-px {
             margin: #{$i}#{"px"} #{$j}#{"px"};
         }
-
-        // THREE VALUES
-        @for $k from 0 through 100 {
-            .m-#{$i}-#{$j}-#{$k}-px {
-                margin: #{$i}#{"px"} #{$j}#{"px"} #{$k}#{"px"};
-            }
-        }
     }    
     
     // ============
@@ -93,13 +86,6 @@
     @for $j from 0 through 100 {
         .m-#{$i}-#{$j}-pct {
             margin: #{$i}#{"%"} #{$j}#{"%"};
-        }
-
-        // THREE VALUES
-        @for $k from 0 through 100 {
-            .m-#{$i}-#{$j}-#{$k}-pct {
-                margin: #{$i}#{"%"} #{$j}#{"%"} #{$k}#{"%"};
-            }
         }
     }
 }

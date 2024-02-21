@@ -1,0 +1,13 @@
+@for $i from 1 through 100 {
+  .b-#{$i} {
+    border: #{$i}#{"px"} solid black;
+  }
+}
+@each $key, $val in $colorMap {
+  @for $i from 1 through 100 {
+    .b-#{$key}-op-#{$i} {
+      color: $val;
+      opacity: #{$i}#{"%"};
+    }
+  }
+}
