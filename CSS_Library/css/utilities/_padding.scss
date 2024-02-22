@@ -1,0 +1,86 @@
+@for $i from 0 through 100 {
+  // ============
+  // PX
+  // ============
+  // ONE VALUE
+  .p-#{$i}-px {
+    padding: #{$i}#{"px"};
+  }
+  .pt-#{$i}-px {
+    padding-top: #{$i}#{"px"};
+  }
+  .pb-#{$i}-px {
+    padding-bottom: #{$i}#{"px"};
+  }
+  .pl-#{$i}-px {
+    padding-left: #{$i}#{"px"};
+  }
+  .pr-#{$i}-px {
+    padding-right: #{$i}#{"px"};
+  }
+  @for $j from 0 through 100 {
+    // TWO VALUES
+    .p-#{$i}-#{$j}-px {
+      padding: #{$i}#{"px"} #{$j}#{"px"};
+    }
+  }
+
+  // ============
+  // EM
+  // ============
+  // One Value
+  .p-#{$i}-em {
+    padding: #{$i}#{"em"};
+  }
+  .pt-#{$i}-em {
+    padding-top: #{$i}#{"em"};
+  }
+  .pb-#{$i}-em {
+    padding-bottom: #{$i}#{"em"};
+  }
+  .pl-#{$i}-em {
+    padding-left: #{$i}#{"em"};
+  }
+  .pr-#{$i}-em {
+    padding-right: #{$i}#{"em"};
+  }
+
+  @for $j from 0 through 100 {
+    // TWO VALUES
+    .p-#{$i}-#{$j}-em {
+      padding: #{$i}#{"em"} #{$j}#{"em"};
+    }
+
+    // THREE VALUES
+    @for $k from 0 through 100 {
+      .p-#{$i}-#{$j}-#{$k}-em {
+        padding: #{$i}#{"em"} #{$j}#{"em"} #{$k}#{"em"};
+      }
+    }
+  }
+
+  // ============
+  // %
+  // ============
+  .p-#{$i}-pct {
+    padding: #{$i}#{"%"};
+  }
+  .pt-#{$i}-pct {
+    padding-top: #{$i}#{"%"};
+  }
+  .pb-#{$i}-pct {
+    padding-bottom: #{$i}#{"%"};
+  }
+  .pl-#{$i}-pct {
+    padding-left: #{$i}#{"%"};
+  }
+  .pr-#{$i}-pct {
+    padding-right: #{$i}#{"%"};
+  }
+
+  @for $j from 0 through 100 {
+    .p-#{$i}-#{$j}-pct {
+      padding: #{$i}#{"%"} #{$j}#{"%"};
+    }
+  }
+}
