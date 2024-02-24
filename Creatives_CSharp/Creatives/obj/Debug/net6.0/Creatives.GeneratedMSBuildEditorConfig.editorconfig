@@ -8,65 +8,65 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Creatives
 build_property.RootNamespace = Creatives
-build_property.ProjectDir = C:\Users\aaron\Desktop\Projects\Stacks\Creatives_CSharp\Creatives\
+build_property.ProjectDir = c:\Users\aaron\Desktop\Projects\Stacks\Creatives_CSharp\Creatives\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\aaron\Desktop\Projects\Stacks\Creatives_CSharp\Creatives
+build_property.MSBuildProjectDirectory = c:\Users\aaron\Desktop\Projects\Stacks\Creatives_CSharp\Creatives
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Art/Dashboard.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Art/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0XERhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Art/EditArt.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Art/EditArt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0XEVkaXRBcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Art/NewArt.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Art/NewArt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0XE5ld0FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Art/ViewArt.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Art/ViewArt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0XFZpZXdBcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Art/_AllArt.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Art/_AllArt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0XF9BbGxBcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Home/Index.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Shared/Error.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/User/Login.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/User/Register.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/User/Welcome.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/User/Welcome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxXZWxjb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/_ViewImports.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/_ViewStart.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Shared/_Layout.cshtml]
+[c:/Users/aaron/Desktop/Projects/Stacks/Creatives_CSharp/Creatives/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4ps4rj8qqx
