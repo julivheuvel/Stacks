@@ -355,6 +355,9 @@ Classes created include:
             <a href="#Overflow">Overflow</a>
         </li>
         <li>
+            <a href="#Padding">Padding</a>
+        </li>
+        <li>
             <a href="#Position">Position</a>
         </li>
         <li>
@@ -585,7 +588,27 @@ Customizing with height can be defined by either `.h` or `.vh` and appended by a
 
 #### Margin
 
-Margins set on a scale of 0-100 using units px, em, and percent
+Margins set on a scale of 0-100 using units px, em, rem, and percent utilizing either 1 value to affect top, right, bottom, left OR 2 values to affect top, bottom and left, right.
+Margin Auto can be defined to the default Margin: 0 auto; by .m-auto or by a scale of 1-100 using units px, em, rem and percent by .m-{value}-auto
+
+| margin              |      class name                |
+| :-----------------: | :----------------------------: |
+| margin px 1 value   | .m-{value}-px                  |
+| margin px auto      | .m-{value}px-auto              |
+| margin em 1 value   | .m-{value}-em                  |
+| margin em auto      | .m-{value}em-auto              |
+| margin rem 1 value  | .m-{value}-rem                 |
+| margin rem auto     | .m-{value}em-auto              |
+| margin % 1 value    | .m-{value}-pct                 |
+| margin % auto       | .m-{value}pct-auto             |
+| margin px 2 values  | .m-{topBottom}-{leftRight}-px  |
+| margin px 2 values  | .m-{topBottom}-{leftRight}-px  |
+| margin em 2 values  | .m-{topBottom}-{leftRight}-em  |
+| margin em 2 values  | .m-{topBottom}-{leftRight}-em  |
+| margin rem 2 values | .m-{topBottom}-{leftRight}-rem |
+| margin rem 2 values | .m-{topBottom}-{leftRight}-rem |
+| margin % 2 values   | .m-{topBottom}-{leftRight}-pct |
+
 
 <p align="right">(<a href="#utilities">back to utilities</a>)</p>
 
@@ -598,6 +621,25 @@ Margins set on a scale of 0-100 using units px, em, and percent
 <p align="right">(<a href="#utilities">back to utilities</a>)</p>
 
 #### Overflow
+
+<p align="right">(<a href="#utilities">back to utilities</a>)</p>
+
+#### Padding
+Padding set on a scale of 0-100 using units px, em, and percent utilizing either 1 value to affect top, right, bottom, left OR 2 values to affect top, bottom and left, right.
+
+| padding              |      class name                |
+| :-----------------: | :----------------------------: |
+| padding px 1 value   | .m-{value}-px                  |
+| padding em 1 value   | .m-{value}-em                  |
+| padding rem 1 value  | .m-{value}-rem                 |
+| padding % 1 value    | .m-{value}-pct                 |
+| padding px 2 values  | .m-{topBottom}-{leftRight}-px  |
+| padding px 2 values  | .m-{topBottom}-{leftRight}-px  |
+| padding em 2 values  | .m-{topBottom}-{leftRight}-em  |
+| padding em 2 values  | .m-{topBottom}-{leftRight}-em  |
+| padding rem 2 values | .m-{topBottom}-{leftRight}-rem |
+| padding rem 2 values | .m-{topBottom}-{leftRight}-rem |
+| padding % 2 values   | .m-{topBottom}-{leftRight}-pct |
 
 <p align="right">(<a href="#utilities">back to utilities</a>)</p>
 

@@ -7,6 +7,9 @@
   // PX
   // ============
   // ONE VALUE
+  .m-#{$i}#{"px"}-auto {
+    margin: #{$i}#{"px"} auto;
+  }
   .m-#{$i}-px {
     margin: #{$i}#{"px"};
   }
@@ -33,6 +36,9 @@
   // EM
   // ============
   // One Value
+  .m-#{$i}#{"em"}-auto {
+    margin: #{$i}#{"em"} auto;
+  }
   .m-#{$i}-em {
     margin: #{$i}#{"em"};
   }
@@ -59,6 +65,9 @@
   // REM
   // ============
   // One Value
+  .m-#{$i}#{"rem"}-auto {
+    margin: #{$i}#{"rem"} auto;
+  }
   .m-#{$i}-rem {
     margin: #{$i}#{"rem"};
   }
@@ -85,6 +94,10 @@
   // ============
   // %
   // ============
+  // ONE VALUE
+  .m-#{$i}#{"pct"}-auto {
+    margin: #{$i}#{"%"} auto;
+  }
   .m-#{$i}-pct {
     margin: #{$i}#{"%"};
   }
@@ -102,6 +115,7 @@
   }
 
   @for $j from 0 through 100 {
+    // TWO VALUES
     .m-#{$i}-#{$j}-pct {
       margin: #{$i}#{"%"} #{$j}#{"%"};
     }
