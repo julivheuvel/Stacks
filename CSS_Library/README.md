@@ -404,6 +404,16 @@ Customize background with colors. All predefined css colors can be called with t
 <p align="right">(<a href="#utilities">back to utilities</a>)</p>
 
 #### Borders
+Borders set on a scale of 0-100 using units px, em, and percent utilizing either 1 value to affect top, right, bottom, left OR 2 values to affect top, bottom and left, right.
+
+| border              |      class name                |
+| :-----------------: | :----------------------------: |
+| border px 1 value   | .b-{value}-px-{color}          |
+| border em 1 value   | .b-{value}-em-{color}          |
+| border rem 1 value  | .b-{value}-rem-{color}         |
+| border % 1 value    | .b-{value}-pct-{color}         |
+<!-- include top bottom left right -->
+
 
 <p align="right">(<a href="#utilities">back to utilities</a>)</p>
 

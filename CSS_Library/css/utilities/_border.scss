@@ -7,7 +7,33 @@
   @for $i from 1 through 100 {
     .b-#{$key}-op-#{$i} {
       color: $val;
-      opacity: #{$i}#{"%"};
+    }
+  }
+
+
+  // ============
+  // PX
+  // ============
+  // ONE VALUE
+  .b-#{$i}-px-#{$key} {
+    border: #{$i}#{"px"} solid #{$val};
+  }
+  .bt-#{$i}-px-#{$key} {
+    border-top: #{$i}#{"px"} solid #{$val};
+  }
+  .bb-#{$i}-px-#{$key} {
+    border-bottom: #{$i}#{"px"} solid #{$val};
+  }
+  .bl-#{$i}-px-#{$key} {
+    border-left: #{$i}#{"px"} solid #{$val};
+  }
+  .br-#{$i}-px-#{$key} {
+    border-right: #{$i}#{"px"} solid #{$val};
+  }
+  @for $j from 0 through 100 {
+    // TWO VALUES
+    .b-#{$i}-#{$j}-px-#{$key} {
+      border: #{$i}#{"px"} #{$j}#{"px"};
     }
   }
 }
